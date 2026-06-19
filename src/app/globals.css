@@ -1,0 +1,218 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+  PMT Health Care Institution — Brand System
+  Derived from the institution's "quality, compassion, trust" voice and the
+  ceremonial weight of the nursing oath. Teal carries structure, ochre is the
+  only "alive" accent, maroon is reserved for ceremonial contexts only.
+*/
+
+@theme inline {
+  /* Brand colors */
+  --color-forest-teal: #16433D;
+  --color-forest-teal-deep: #0F2E2A;
+  --color-forest-teal-soft: #1E5650;
+  --color-warm-ochre: #D98E2B;
+  --color-warm-ochre-soft: #E5A852;
+  --color-deep-maroon: #6B1F2A;
+  --color-warm-off-white: #FAF7F2;
+  --color-warm-off-white-2: #F2EDE3;
+  --color-charcoal: #1A1A18;
+  --color-charcoal-soft: #3A3A36;
+
+  /* Surface tokens */
+  --color-background: #FAF7F2;
+  --color-foreground: #1A1A18;
+  --color-card: #FFFFFF;
+  --color-card-foreground: #1A1A18;
+  --color-popover: #FFFFFF;
+  --color-popover-foreground: #1A1A18;
+  --color-primary: #16433D;
+  --color-primary-foreground: #FAF7F2;
+  --color-secondary: #F2EDE3;
+  --color-secondary-foreground: #16433D;
+  --color-muted: #F2EDE3;
+  --color-muted-foreground: #5C5A52;
+  --color-accent: #D98E2B;
+  --color-accent-foreground: #1A1A18;
+  --color-destructive: #6B1F2A;
+  --color-destructive-foreground: #FAF7F2;
+  --color-border: #E6DFD0;
+  --color-input: #E6DFD0;
+  --color-ring: #D98E2B;
+
+  /* Typography */
+  --font-display: var(--font-fraunces), Georgia, serif;
+  --font-sans: var(--font-work-sans), system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), "SFMono-Regular", monospace;
+
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+
+  /* keep chart vars so existing shadcn components don't break */
+  --color-chart-1: #16433D;
+  --color-chart-2: #D98E2B;
+  --color-chart-3: #6B1F2A;
+  --color-chart-4: #1E5650;
+  --color-chart-5: #5C5A52;
+  --color-sidebar: #FAF7F2;
+  --color-sidebar-foreground: #1A1A18;
+  --color-sidebar-primary: #16433D;
+  --color-sidebar-primary-foreground: #FAF7F2;
+  --color-sidebar-accent: #F2EDE3;
+  --color-sidebar-accent-foreground: #16433D;
+  --color-sidebar-border: #E6DFD0;
+  --color-sidebar-ring: #D98E2B;
+}
+
+:root {
+  --radius: 8px;
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  font-feature-settings: "ss01", "ss02";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--color-warm-ochre);
+  color: var(--color-charcoal);
+}
+
+/* Focus rings — always visible, accessible */
+:focus-visible {
+  outline: 2px solid var(--color-warm-ochre);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Display font helper */
+.font-display {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+}
+
+/* Mono utility — used for dates, accreditation numbers, campus codes */
+.font-mono {
+  font-family: var(--font-mono);
+  font-feature-settings: "zero";
+}
+
+/* The Pulse Line — single continuous line motif, used ONCE per page max */
+.pulse-line-path {
+  stroke-dasharray: 2400;
+  stroke-dashoffset: 2400;
+  animation: pulse-draw 3.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes pulse-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Heartbeat blip at the apex */
+.pulse-blip {
+  opacity: 0;
+  animation: pulse-blip 0.4s ease-out 2.6s forwards;
+}
+
+@keyframes pulse-blip {
+  0% { opacity: 0; transform: scale(0.6); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pulse-line-path {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+  .pulse-blip {
+    animation: none;
+    opacity: 1;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Placeholder image block — graceful teal/ochre fallback when real photo missing */
+.placeholder-block {
+  background:
+    linear-gradient(135deg, rgba(22, 67, 61, 0.92) 0%, rgba(15, 46, 42, 0.96) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.placeholder-block::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(217, 142, 43, 0.18) 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(217, 142, 43, 0.12) 0%, transparent 35%);
+  pointer-events: none;
+}
+
+.placeholder-block::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent 0,
+    transparent 12px,
+    rgba(250, 247, 242, 0.025) 12px,
+    rgba(250, 247, 242, 0.025) 13px
+  );
+  pointer-events: none;
+}
+
+/* Decorative oath divider — used on Accreditation + About pages only */
+.oath-rule {
+  display: block;
+  width: 64px;
+  height: 1px;
+  background-color: var(--color-deep-maroon);
+}
+
+/* Subtle paper grain on warm backgrounds */
+.paper-grain {
+  background-image:
+    radial-gradient(circle at 50% 50%, rgba(26, 26, 24, 0.015) 0%, transparent 60%);
+}
+
+/* Link underline animation for body links */
+.link-underline {
+  background-image: linear-gradient(var(--color-warm-ochre), var(--color-warm-ochre));
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size 0.3s ease;
+}
+.link-underline:hover {
+  background-size: 100% 1px;
+}
