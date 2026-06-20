@@ -107,10 +107,9 @@ export default function AccreditationPage() {
         <div className="mx-auto max-w-8xl px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
           <div className="grid gap-10 lg:gap-16 lg:grid-cols-12 items-start">
             <div className="lg:col-span-5" data-reveal>
-              {/* HPCNA card with real logo */}
-              <div className="bg-pmt-purple-900 text-pmt-cream p-7 sm:p-9 rounded-3xl border border-pmt-purple-800">
-                <div className="flex items-center justify-between gap-3 mb-6 pb-6 border-b border-pmt-cream/15">
-                  { }
+              {/* HPCNA card — LIGHT theme (swapped from dark per Fix 2) */}
+              <div className="bg-white border-2 border-pmt-purple-900 p-7 sm:p-9 rounded-3xl card-physics">
+                <div className="flex items-center justify-between gap-3 mb-6 pb-6 border-b border-pmt-purple-900/10">
                   <img
                     src="/images/crawled/logo-hpcna.png"
                     alt="HPCNA logo"
@@ -121,16 +120,16 @@ export default function AccreditationPage() {
                     Approved
                   </span>
                 </div>
-                <p className="font-mono text-[10px] uppercase tracking-widest text-pmt-cream/50 mb-2">
+                <p className="font-mono text-[10px] uppercase tracking-widest text-pmt-ink-soft mb-2">
                   Regulator
                 </p>
-                <p className="text-base text-pmt-cream leading-snug mb-6">
+                <p className="text-base text-pmt-purple-900 leading-snug mb-6">
                   {accreditation.hpcna.name}
                 </p>
-                <p className="font-mono text-[10px] uppercase tracking-widest text-pmt-cream/50 mb-2">
+                <p className="font-mono text-[10px] uppercase tracking-widest text-pmt-ink-soft mb-2">
                   Approval date
                 </p>
-                <p className="font-display text-2xl text-pmt-gold-soft leading-tight">
+                <p className="font-display text-2xl text-pmt-gold leading-tight">
                   {accreditation.hpcna.approvedOn}
                 </p>
               </div>
@@ -190,29 +189,29 @@ export default function AccreditationPage() {
         <div className="mx-auto max-w-8xl px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
           <div className="grid gap-10 lg:gap-16 lg:grid-cols-12 items-start">
             <div className="lg:col-span-5 lg:order-2" data-reveal>
-              <div className="bg-white border-2 border-pmt-purple-900 p-7 sm:p-9 rounded-3xl card-physics">
-                <div className="flex items-center justify-between gap-3 mb-6 pb-6 border-b border-pmt-purple-900/10">
-                  { }
+              {/* NQA card — DARK/PURPLE theme (swapped from light per Fix 2) */}
+              <div className="bg-pmt-purple-900 text-pmt-cream p-7 sm:p-9 rounded-3xl border border-pmt-purple-800 card-physics">
+                <div className="flex items-center justify-between gap-3 mb-6 pb-6 border-b border-pmt-cream/15">
                   <img
                     src="/images/crawled/logo-nqa.png"
                     alt="NQA logo"
-                    className="h-16 w-auto object-contain"
+                    className="h-16 w-auto object-contain bg-pmt-cream rounded-lg p-1.5"
                     loading="lazy"
                   />
                   <span className="font-mono text-[10px] uppercase tracking-widest text-pmt-gold">
                     Accredited
                   </span>
                 </div>
-                <p className="font-mono text-[10px] uppercase tracking-widest text-pmt-ink-soft mb-2">
+                <p className="font-mono text-[10px] uppercase tracking-widest text-pmt-cream/50 mb-2">
                   Authority
                 </p>
-                <p className="text-base text-pmt-purple-900 leading-snug mb-6">
+                <p className="text-base text-pmt-cream leading-snug mb-6">
                   {accreditation.nqa.name}
                 </p>
-                <p className="font-mono text-[10px] uppercase tracking-widest text-pmt-ink-soft mb-2">
+                <p className="font-mono text-[10px] uppercase tracking-widest text-pmt-cream/50 mb-2">
                   Qualification
                 </p>
-                <p className="font-display text-xl text-pmt-purple-900 leading-tight tracking-tight">
+                <p className="font-display text-xl text-pmt-cream leading-tight tracking-tight">
                   Diploma in Enrolled Nursing and Midwifery Science
                 </p>
                 <p className="font-mono text-sm text-pmt-gold mt-1">

@@ -21,11 +21,11 @@ export default function HomePage() {
       {/* ──────────────────────────── HERO (Attention) ──────────────────────────── */}
       <section
         aria-labelledby="hero-title"
-        className="relative overflow-hidden"
+        className="relative overflow-hidden -mt-24 min-h-[100vh]"
       >
-        {/* Background: real crawled photo of PMT students in classroom, with purple overlay */}
+        {/* Background: real crawled photo of PMT students in classroom, with purple overlay.
+            Photo extends full-bleed to the top of the viewport, behind the floating nav. */}
         <div className="absolute inset-0 -z-10" aria-hidden="true">
-          { }
           <img
             src="/images/crawled/banner-students-classroom.jpg"
             alt=""
@@ -42,7 +42,7 @@ export default function HomePage() {
           />
         </div>
 
-        <div className="mx-auto max-w-8xl px-4 sm:px-6 lg:px-8 pt-20 pb-24 sm:pt-28 sm:pb-32 lg:pt-36 lg:pb-40">
+        <div className="mx-auto max-w-8xl px-4 sm:px-6 lg:px-8 pt-36 pb-24 sm:pt-44 sm:pb-32 lg:pt-52 lg:pb-40">
           <div className="grid gap-10 lg:gap-12 lg:grid-cols-12 items-end">
             <div className="lg:col-span-8">
               {/* Trust badges above the fold */}

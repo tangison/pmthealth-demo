@@ -63,31 +63,44 @@ export default function NewsPage() {
             {sorted.map((item) => (
               <li
                 key={item.slug}
-                className="bg-pmt-cream p-7 sm:p-8 flex flex-col group card-physics"
+                className="bg-pmt-cream flex flex-col group card-physics overflow-hidden"
               >
-                <div className="flex items-center justify-between gap-3 mb-4">
-                  <span
-                    className={`inline-flex items-center px-2 py-1 border rounded-full font-mono text-[10px] uppercase tracking-widest ${
-                      categoryColors[item.category] ?? ""
-                    }`}
-                  >
-                    {item.category}
-                  </span>
-                  <time
-                    dateTime={item.isoDate}
-                    className="font-mono text-xs text-pmt-ink-soft/70"
-                  >
-                    {item.date}
-                  </time>
+                {item.imageSrc && (
+                  <div className="img-zoom aspect-[16/9] bg-pmt-purple-900 overflow-hidden">
+                    { }
+                    <img
+                      src={item.imageSrc}
+                      alt={item.imageAlt ?? ""}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
+                )}
+                <div className="p-7 sm:p-8 flex flex-col flex-1">
+                  <div className="flex items-center justify-between gap-3 mb-4">
+                    <span
+                      className={`inline-flex items-center px-2 py-1 border rounded-full font-mono text-[10px] uppercase tracking-widest ${
+                        categoryColors[item.category] ?? ""
+                      }`}
+                    >
+                      {item.category}
+                    </span>
+                    <time
+                      dateTime={item.isoDate}
+                      className="font-mono text-xs text-pmt-ink-soft/70"
+                    >
+                      {item.date}
+                    </time>
+                  </div>
+
+                  <h3 className="font-display text-2xl text-pmt-purple-900 leading-tight mb-3 group-hover:text-pmt-gold transition-colors tracking-tight">
+                    {item.title}
+                  </h3>
+
+                  <p className="text-sm text-pmt-ink-soft leading-relaxed">
+                    {item.summary}
+                  </p>
                 </div>
-
-                <h3 className="font-display text-2xl text-pmt-purple-900 leading-tight mb-3 group-hover:text-pmt-gold transition-colors tracking-tight">
-                  {item.title}
-                </h3>
-
-                <p className="text-sm text-pmt-ink-soft leading-relaxed">
-                  {item.summary}
-                </p>
               </li>
             ))}
           </ol>

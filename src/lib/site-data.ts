@@ -135,6 +135,8 @@ export type NewsItem = {
   category: "Announcement" | "Intake" | "Partnership" | "Funding" | "Ceremony";
   title: string;
   summary: string;
+  imageSrc?: string;
+  imageAlt?: string;
 };
 
 export const news: NewsItem[] = [
@@ -146,6 +148,8 @@ export const news: NewsItem[] = [
     title: "March 2026 intake — applications open",
     summary:
       "PMT is accepting applications for the March 2026 intake of the Diploma in Enrolled Nursing and Midwifery Science. Both NSFAF-funded and non-funded applicants are welcome. Contact your nearest campus to confirm the entrance test window.",
+    imageSrc: "/images/crawled/students-classroom-01.jpg",
+    imageAlt: "PMT students in a classroom session.",
   },
   {
     slug: "2025-graduation",
@@ -155,6 +159,8 @@ export const news: NewsItem[] = [
     title: "Class of 2025 takes the oath",
     summary:
       "The day before graduation, students recited the nursing oath — the formal pledge that marks the transition from trainee to practitioner. The ceremony followed at Mecure Hotel, Windhoek, continuing the tradition set at the institute's first graduation of 50 nurses.",
+    imageSrc: "/images/crawled/students-ground-gathering.jpg",
+    imageAlt: "PMT students gathered together in blue uniforms.",
   },
   {
     slug: "nsfaf-funding",
@@ -164,6 +170,8 @@ export const news: NewsItem[] = [
     title: "NSFAF funding accepted",
     summary:
       "Eligible students can apply through the Namibia Students Financial Assistance Fund. PMT accepts both NSFAF-sponsored and self-funded applicants — the admissions team at each campus can walk you through either path.",
+    imageSrc: "/images/crawled/students-classroom-02.jpg",
+    imageAlt: "PMT students with open books in a classroom.",
   },
   {
     slug: "icare-mou",
@@ -173,6 +181,8 @@ export const news: NewsItem[] = [
     title: "Articulation MOU with I-Care Health Training Institute",
     summary:
       "PMT and I-Care Health Training Institute signed a memorandum of understanding on 22 August 2023 covering articulation and cross-crediting between the two institutions, opening additional pathways for nursing students.",
+    imageSrc: "/images/crawled/logo-icare-mou.png",
+    imageAlt: "I-Care Health Training Institute logo.",
   },
 ];
 

@@ -50,6 +50,15 @@ export default function AboutPage() {
               </h1>
             </div>
             <div className="lg:col-span-4" data-reveal>
+              <div className="img-zoom rounded-3xl overflow-hidden bg-pmt-purple-900 aspect-[4/3] mb-5">
+                { }
+                <img
+                  src="/images/crawled/students-classroom-01.jpg"
+                  alt="PMT students in a bright classroom with projector."
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
               <p className="text-base text-pmt-ink-soft leading-relaxed">
                 PMT Health Care Institution trains enrolled nurses and
                 midwives for Namibia's health system. This is the story of

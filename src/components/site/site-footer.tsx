@@ -31,10 +31,10 @@ export function SiteFooter() {
       <div className="relative mx-auto max-w-8xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
         {/* Top — badge logo + mission */}
         <div className="grid gap-12 md:gap-16 md:grid-cols-12 items-start">
-          {/* Large circular badge logo — the anchor visual */}
+          {/* Large circular badge logo — the anchor visual (white/inverted for purple bg) */}
           <div className="md:col-span-4 lg:col-span-3 flex flex-col items-center md:items-start">
             <Image
-              src="/images/logo-circular-badge.png"
+              src="/images/logo-badge-white.png"
               alt="PMT Health Care Institution circular badge logo"
               width={180}
               height={180}

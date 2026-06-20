@@ -129,6 +129,28 @@ export default function AdmissionsPage() {
             className="mb-12"
           />
 
+          {/* Real photo strip — students in skills lab (reused from crawled assets) */}
+          <div className="mb-12 grid gap-4 sm:grid-cols-3" data-reveal>
+            <div className="img-zoom aspect-[4/3] rounded-2xl overflow-hidden bg-pmt-purple-900 sm:col-span-2">
+              { }
+              <img
+                src="/images/crawled/students-practical-room.jpg"
+                alt="PMT students in blue scrubs outside the Practical Room."
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div className="img-zoom aspect-[4/3] rounded-2xl overflow-hidden bg-pmt-purple-900">
+              { }
+              <img
+                src="/images/crawled/photo-nurses-day.jpg"
+                alt="Two PMT nurses holding a Nurses Day frame."
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
           <div className="mt-12 grid gap-6 lg:grid-cols-2" data-reveal>
             {/* NSFAF */}
             <article className="bg-white border border-pmt-purple-900/10 rounded-3xl p-7 sm:p-8 flex flex-col card-physics">

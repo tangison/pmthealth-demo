@@ -4,6 +4,7 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import { Chatbot } from "@/components/site/chatbot";
 import { ScrollToTop } from "@/components/site/scroll-to-top";
+import { DemoDisclosure } from "@/components/site/demo-disclosure";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -49,7 +50,15 @@ export const metadata: Metadata = {
   creator: "PMT Health Care Institution",
   publisher: "PMT Health Care Institution",
   icons: {
-    icon: "/favicon.svg",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-32.png", type: "image/png", sizes: "32x32" },
+      { url: "/favicon-16.png", type: "image/png", sizes: "16x16" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
   },
   openGraph: {
     title: "PMT Health Care Institution",
@@ -59,6 +68,14 @@ export const metadata: Metadata = {
     siteName: "PMT Health Care Institution",
     type: "website",
     locale: "en_NA",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "PMT Health Care Institution — Quality Nurses for Namibia",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -87,6 +104,7 @@ export default function RootLayout({
         {/* Floating UI — appears on every page */}
         <ScrollToTop />
         <Chatbot />
+        <DemoDisclosure />
       </body>
     </html>
   );
