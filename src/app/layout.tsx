@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Fraunces, Work_Sans, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
+import { Chatbot } from "@/components/site/chatbot";
+import { ScrollToTop } from "@/components/site/scroll-to-top";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -82,6 +84,9 @@ export default function RootLayout({
       >
         {children}
         <Toaster />
+        {/* Floating UI — appears on every page */}
+        <ScrollToTop />
+        <Chatbot />
       </body>
     </html>
   );
