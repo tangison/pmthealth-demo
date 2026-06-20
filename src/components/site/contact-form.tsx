@@ -56,9 +56,9 @@ export function ContactForm() {
     return (
       <div
         role="status"
-        className="bg-card border border-forest-teal/30 p-7 sm:p-8 text-center"
+        className="bg-card border border-pmt-purple-900/30 p-7 sm:p-8 text-center"
       >
-        <div className="inline-flex w-12 h-12 rounded-full bg-forest-teal text-warm-off-white items-center justify-center mb-4">
+        <div className="inline-flex w-12 h-12 rounded-full bg-pmt-purple-900 text-pmt-cream items-center justify-center mb-4">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
             <path
               d="M4 10L8 14L16 6"
@@ -69,10 +69,10 @@ export function ContactForm() {
             />
           </svg>
         </div>
-        <h3 className="font-display text-2xl text-forest-teal mb-2">
+        <h3 className="font-display text-2xl text-pmt-purple-900 mb-2">
           Message received (demo)
         </h3>
-        <p className="text-sm text-charcoal-soft leading-relaxed max-w-sm mx-auto">
+        <p className="text-sm text-pmt-ink-soft leading-relaxed max-w-sm mx-auto">
           This is a demo confirmation — your message was not actually sent.
           For a real enquiry, please call the relevant campus directly.
         </p>
@@ -82,7 +82,7 @@ export function ContactForm() {
             setStatus("idle");
             setErrors({});
           }}
-          className="mt-6 font-mono text-xs uppercase tracking-wider text-warm-ochre hover:underline underline-offset-4"
+          className="mt-6 font-mono text-xs uppercase tracking-wider text-pmt-gold hover:underline underline-offset-4"
         >
           Send another message
         </button>
@@ -99,7 +99,7 @@ export function ContactForm() {
     >
       <h2
         id="contact-form-title"
-        className="font-display text-xl text-forest-teal mb-6"
+        className="font-display text-xl text-pmt-purple-900 mb-6"
       >
         Send a message
       </h2>
@@ -111,7 +111,7 @@ export function ContactForm() {
             htmlFor="name"
             className="block font-mono text-[10px] uppercase tracking-widest text-muted-foreground mb-2"
           >
-            Name <span className="text-warm-ochre">*</span>
+            Name <span className="text-pmt-gold">*</span>
           </label>
           <input
             id="name"
@@ -121,7 +121,7 @@ export function ContactForm() {
             required
             aria-invalid={!!errors.name}
             aria-describedby={errors.name ? "name-error" : undefined}
-            className="w-full bg-warm-off-white border border-border px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/60 focus:border-forest-teal focus:outline-none focus:ring-2 focus:ring-warm-ochre/40 transition-colors"
+            className="w-full bg-pmt-cream border border-border px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/60 focus:border-pmt-purple-900 focus:outline-none focus:ring-2 focus:ring-pmt-gold/40 transition-colors"
             placeholder="Your full name"
           />
           {errors.name && (
@@ -141,7 +141,7 @@ export function ContactForm() {
             htmlFor="email"
             className="block font-mono text-[10px] uppercase tracking-widest text-muted-foreground mb-2"
           >
-            Email <span className="text-warm-ochre">*</span>
+            Email <span className="text-pmt-gold">*</span>
           </label>
           <input
             id="email"
@@ -151,7 +151,7 @@ export function ContactForm() {
             required
             aria-invalid={!!errors.email}
             aria-describedby={errors.email ? "email-error" : undefined}
-            className="w-full bg-warm-off-white border border-border px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/60 focus:border-forest-teal focus:outline-none focus:ring-2 focus:ring-warm-ochre/40 transition-colors"
+            className="w-full bg-pmt-cream border border-border px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/60 focus:border-pmt-purple-900 focus:outline-none focus:ring-2 focus:ring-pmt-gold/40 transition-colors"
             placeholder="you@example.com"
           />
           {errors.email && (
@@ -178,7 +178,7 @@ export function ContactForm() {
             name="phone"
             type="tel"
             autoComplete="tel"
-            className="w-full bg-warm-off-white border border-border px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/60 focus:border-forest-teal focus:outline-none focus:ring-2 focus:ring-warm-ochre/40 transition-colors"
+            className="w-full bg-pmt-cream border border-border px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/60 focus:border-pmt-purple-900 focus:outline-none focus:ring-2 focus:ring-pmt-gold/40 transition-colors"
             placeholder="081 ..."
           />
         </div>
@@ -195,7 +195,7 @@ export function ContactForm() {
             id="campus"
             name="campus"
             defaultValue=""
-            className="w-full bg-warm-off-white border border-border px-4 py-3 text-sm text-foreground focus:border-forest-teal focus:outline-none focus:ring-2 focus:ring-warm-ochre/40 transition-colors"
+            className="w-full bg-pmt-cream border border-border px-4 py-3 text-sm text-foreground focus:border-pmt-purple-900 focus:outline-none focus:ring-2 focus:ring-pmt-gold/40 transition-colors"
           >
             <option value="" disabled>
               Select a campus
@@ -221,7 +221,7 @@ export function ContactForm() {
             id="subject"
             name="subject"
             type="text"
-            className="w-full bg-warm-off-white border border-border px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/60 focus:border-forest-teal focus:outline-none focus:ring-2 focus:ring-warm-ochre/40 transition-colors"
+            className="w-full bg-pmt-cream border border-border px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/60 focus:border-pmt-purple-900 focus:outline-none focus:ring-2 focus:ring-pmt-gold/40 transition-colors"
             placeholder="e.g. Admissions enquiry for March 2026 intake"
           />
         </div>
@@ -232,7 +232,7 @@ export function ContactForm() {
             htmlFor="message"
             className="block font-mono text-[10px] uppercase tracking-widest text-muted-foreground mb-2"
           >
-            Message <span className="text-warm-ochre">*</span>
+            Message <span className="text-pmt-gold">*</span>
           </label>
           <textarea
             id="message"
@@ -241,7 +241,7 @@ export function ContactForm() {
             required
             aria-invalid={!!errors.message}
             aria-describedby={errors.message ? "message-error" : undefined}
-            className="w-full bg-warm-off-white border border-border px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/60 focus:border-forest-teal focus:outline-none focus:ring-2 focus:ring-warm-ochre/40 transition-colors resize-y"
+            className="w-full bg-pmt-cream border border-border px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/60 focus:border-pmt-purple-900 focus:outline-none focus:ring-2 focus:ring-pmt-gold/40 transition-colors resize-y"
             placeholder="Your message..."
           />
           {errors.message && (
@@ -258,12 +258,12 @@ export function ContactForm() {
 
       <div className="mt-6 flex flex-wrap items-center justify-between gap-4">
         <p className="text-xs text-muted-foreground">
-          <span className="text-warm-ochre">*</span> Required
+          <span className="text-pmt-gold">*</span> Required
         </p>
         <button
           type="submit"
           disabled={status === "submitting"}
-          className="inline-flex items-center justify-center gap-2 font-mono uppercase tracking-wider text-xs px-7 py-4 rounded-sm bg-warm-ochre text-charcoal hover:bg-warm-ochre-soft transition-colors disabled:opacity-60 disabled:cursor-not-allowed focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-warm-ochre"
+          className="btn-physics inline-flex items-center justify-center gap-2 font-mono uppercase tracking-wider text-xs px-7 py-4 rounded-full bg-pmt-gold text-pmt-ink hover:bg-pmt-gold-soft disabled:opacity-60 disabled:cursor-not-allowed focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pmt-gold"
         >
           {status === "submitting" ? (
             <>

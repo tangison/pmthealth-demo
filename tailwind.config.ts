@@ -45,31 +45,35 @@ const config: Config = {
         border: "var(--color-border)",
         input: "var(--color-input)",
         ring: "var(--color-ring)",
-        // Brand
-        "forest-teal": {
-          DEFAULT: "#16433D",
-          deep: "#0F2E2A",
-          soft: "#1E5650",
+        // PMT brand — purple system (Phase 2)
+        "pmt-purple": {
+          900: "#2E1F52",
+          800: "#382564",
+          700: "#432D72",
+          600: "#553A8E",
+          500: "#6347A0",
+          400: "#8268B8",
         },
-        "warm-ochre": {
-          DEFAULT: "#D98E2B",
-          soft: "#E5A852",
+        "pmt-gold": {
+          DEFAULT: "#C9972B",
+          soft: "#D9AC4E",
+          deep: "#A87C1F",
         },
-        "deep-maroon": "#6B1F2A",
-        "warm-off-white": {
+        "pmt-ink": {
+          DEFAULT: "#1A1726",
+          soft: "#3D3654",
+        },
+        "pmt-cream": {
           DEFAULT: "#FAF7F2",
           2: "#F2EDE3",
         },
-        charcoal: {
-          DEFAULT: "#1A1A18",
-          soft: "#3A3A36",
-        },
+        "pmt-maroon": "#6B1F2A",
         chart: {
-          "1": "#16433D",
-          "2": "#D98E2B",
+          "1": "#2E1F52",
+          "2": "#C9972B",
           "3": "#6B1F2A",
-          "4": "#1E5650",
-          "5": "#5C5A52",
+          "4": "#432D72",
+          "5": "#5C566B",
         },
         sidebar: {
           DEFAULT: "var(--color-sidebar)",

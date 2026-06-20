@@ -16,6 +16,7 @@ export const site = {
   founded: 2019,
   director: "Sister (SR) Rutendo T. Zvidza",
   namedFor: "Priscilla Monica Tendo",
+  email: "hello@pmt-healthcare.org", // from crawled site
   social: {
     facebook: "https://www.facebook.com/pmthealthcareinstitution",
     instagram: "https://www.instagram.com/pmthealthcareinstitution",
@@ -51,10 +52,44 @@ export const programme = {
   durationConfirmed: false,
 } as const;
 
+// Additional programmes listed on the institution's existing site (47.kesug.com).
+// CONFLICT FLAG: The original demo brief specified only the Diploma above. The
+// crawled site lists 6 programmes total. The additional 5 are surfaced here
+// clearly marked as "verify current availability" — they are not the primary
+// offer of this demo build, but the institution does publish them.
+export const additionalProgrammes: { name: string; summary: string }[] = [
+  {
+    name: "Counseling Services",
+    summary:
+      "Equipping students with skills to provide community support and mental health services.",
+  },
+  {
+    name: "Occupational Health and Safety",
+    summary:
+      "Training professionals to ensure workplace safety and promote health in occupational settings.",
+  },
+  {
+    name: "Health Caregiver",
+    summary:
+      "Equipping students for compassionate care with practical skills for elderly and disabled.",
+  },
+  {
+    name: "Pharmacy Sales Assistant",
+    summary:
+      "Preparing students for pharmacy support with medication dispensing and customer service skills.",
+  },
+  {
+    name: "Community Health",
+    summary:
+      "Training students for public health with education, outreach, and disease prevention skills.",
+  },
+];
+
 export type Campus = {
   slug: string;
   city: string;
   phone: string;
+  landline?: string;
   address?: string;
   mapQuery?: string;
 };
@@ -64,7 +99,8 @@ export const campuses: Campus[] = [
     slug: "windhoek",
     city: "Windhoek",
     phone: "081 342 1056",
-    address: "No. 12, Sauerbruch Street, Windhoek West",
+    landline: "+264 61 250 976", // from crawled site
+    address: "No. 12, Sauerbruch Street, Windhoek West, 9000",
     mapQuery: "Sauerbruch Street, Windhoek West, Windhoek, Namibia",
   },
   {
@@ -158,68 +194,59 @@ export const galleryImages: {
   span?: "wide" | "tall" | "default";
 }[] = [
   {
-    src: "/images/gallery/graduation-01.jpg",
-    alt: "Graduating nursing class in ceremonial attire, Mecure Hotel Windhoek.",
-    caption: "Graduation ceremony — Windhoek",
+    src: "/images/crawled/banner-students-classroom.jpg",
+    alt: "Group of PMT students in blue uniforms preparing in a classroom.",
+    caption: "In the classroom — Windhoek",
     span: "wide",
   },
   {
-    src: "/images/gallery/ceremony-01.jpg",
-    alt: "Oath-taking ceremony the day before graduation.",
-    caption: "The oath — the night before",
+    src: "/images/crawled/students-classroom-01.jpg",
+    alt: "Classroom full of PMT students at desks, bright room with projector.",
+    caption: "Theory class",
   },
   {
-    src: "/images/gallery/campus-windhoek-01.jpg",
-    alt: "PMT Windhoek campus on Sauerbruch Street, Windhoek West.",
-    caption: "Windhoek campus",
-  },
-  {
-    src: "/images/gallery/graduation-02.jpg",
-    alt: "Graduate receiving diploma on stage.",
-    caption: "Crossing the stage",
+    src: "/images/crawled/students-skills-lab.jpg",
+    alt: "Four PMT students in teal uniforms, aprons, and masks in the skills lab.",
+    caption: "Skills lab",
     span: "tall",
   },
   {
-    src: "/images/gallery/classroom-01.jpg",
-    alt: "Nursing students in a classroom session.",
-    caption: "In the classroom",
-  },
-  {
-    src: "/images/gallery/ceremony-02.jpg",
-    alt: "Students reciting the nursing oath in unison.",
-    caption: "Reciting the oath",
+    src: "/images/crawled/students-practical-room.jpg",
+    alt: "Group of PMT students in blue scrubs outside the Practical Room and Class 2.",
+    caption: "Practical Room — campus",
     span: "wide",
   },
   {
-    src: "/images/gallery/campus-rundu-01.jpg",
-    alt: "PMT Rundu campus, north-eastern Namibia.",
-    caption: "Rundu campus",
+    src: "/images/crawled/students-campus-building.jpg",
+    alt: "Group of PMT students in blue uniforms in front of the PMT building.",
+    caption: "PMT campus building",
   },
   {
-    src: "/images/gallery/campus-ongwediva-01.jpg",
-    alt: "PMT Ongwediva campus, northern Namibia.",
-    caption: "Ongwediva campus",
+    src: "/images/crawled/students-classroom-02.jpg",
+    alt: "Group of PMT students in a classroom, smiling at camera, books open.",
+    caption: "Class in session",
   },
   {
-    src: "/images/gallery/graduation-03.jpg",
-    alt: "Group portrait of graduating nurses.",
-    caption: "Class portrait",
-  },
-  {
-    src: "/images/gallery/classroom-02.jpg",
-    alt: "Practical skills demonstration in the training lab.",
-    caption: "Skills lab",
-  },
-  {
-    src: "/images/gallery/graduation-04.jpg",
-    alt: "Family celebrating with a graduate after the ceremony.",
-    caption: "With family",
+    src: "/images/crawled/students-ground-gathering.jpg",
+    alt: "Group of PMT students in blue uniforms gathered together on the ground.",
+    caption: "Campus life",
     span: "wide",
   },
   {
-    src: "/images/gallery/ceremony-03.jpg",
-    alt: "Candle lighting during the oath ceremony.",
-    caption: "Candle ceremony",
+    src: "/images/crawled/photo-nurses-day.jpg",
+    alt: "Two PMT nurses holding a Nurses Day frame in front of a Namibia Institute of Pathology backdrop.",
+    caption: "Nurses Day",
+  },
+  {
+    src: "/images/crawled/photo-safety-vests.jpg",
+    alt: "PMT students in safety vests and blue pants holding blue hard hats in front of a white building.",
+    caption: "OHS training",
+  },
+  {
+    src: "/images/crawled/students-pastor.jpg",
+    alt: "A woman in red and a man in red sitting side by side, smiling — campus ceremony.",
+    caption: "Ceremony",
+    span: "wide",
   },
 ];
 

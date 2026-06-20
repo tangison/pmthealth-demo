@@ -1,32 +1,20 @@
 import * as React from "react";
 
 /**
- * PulseLine — the signature brand motif.
- *
- * A single continuous line that reads simultaneously as a heartbeat / vital
- * signs trace AND a ceremonial thread connecting admission → training → oath
- * → graduation.
- *
- * Per the brand brief: use ONCE per page, deliberately. Do not repeat as
- * decoration. Currently used on the homepage timeline and as a divider on
- * the Accreditation page.
- *
- * Animation is auto-disabled under prefers-reduced-motion.
+ * PulseLine v2 — signature brand motif, gold stroke.
+ * Used ONCE per page, deliberately. Reduced-motion respected.
  */
 type PulseLineProps = {
   className?: string;
-  /** Vertical orientation renders a smaller decorative trace, used as a divider. */
   variant?: "full" | "divider";
-  /** Color of the line stroke. Defaults to warm ochre. */
   strokeColor?: string;
-  /** Hide the small heartbeat blip dot. */
   hideBlip?: boolean;
 };
 
 export function PulseLine({
   className = "",
   variant = "full",
-  strokeColor = "#D98E2B",
+  strokeColor = "#C9972B",
   hideBlip = false,
 }: PulseLineProps) {
   if (variant === "divider") {
@@ -61,23 +49,21 @@ export function PulseLine({
       aria-hidden="true"
       role="presentation"
     >
-      {/* Baseline */}
       <path
         d="M0,60 L300,60 L340,60 L360,30 L380,90 L400,10 L420,110 L440,60 L600,60 L640,60 L660,40 L680,80 L700,60 L900,60 L940,60 L960,20 L980,100 L1000,60 L1200,60"
         fill="none"
         stroke={strokeColor}
-        strokeWidth="2"
+        strokeWidth="2.5"
         strokeLinecap="round"
         strokeLinejoin="round"
         className="pulse-line-path"
       />
-      {/* Heartbeat blip at the apex */}
       {!hideBlip && (
         <circle
           cx="420"
           cy="110"
           r="4"
-          fill="#D98E2B"
+          fill="#C9972B"
           className="pulse-blip"
         />
       )}

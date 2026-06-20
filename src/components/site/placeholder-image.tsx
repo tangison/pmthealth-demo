@@ -4,15 +4,7 @@ import * as React from "react";
 import Image from "next/image";
 
 /**
- * PlaceholderImage
- *
- * Renders a real image if it exists at the given src. If the image fails to
- * load (or is intentionally missing — common during demo phase before the
- * institution provides real photos), falls back to a branded teal/ochre
- * block with the alt text overlaid. Layout never breaks.
- *
- * Per brand brief: no fake stock photos, no AI-generated fake nurses.
- * The branded fallback IS the placeholder — never substitute stock imagery.
+ * PlaceholderImage v2 — purple-themed fallback (no green anywhere).
  */
 type PlaceholderImageProps = {
   src: string;
@@ -20,9 +12,7 @@ type PlaceholderImageProps = {
   width?: number;
   height?: number;
   className?: string;
-  /** Visual treatment of the fallback block. */
-  fallbackVariant?: "teal" | "ochre" | "maroon";
-  /** Optional caption shown in the fallback block. */
+  fallbackVariant?: "purple" | "gold" | "maroon";
   fallbackCaption?: string;
   priority?: boolean;
   sizes?: string;
@@ -34,7 +24,7 @@ export function PlaceholderImage({
   width,
   height,
   className = "",
-  fallbackVariant = "teal",
+  fallbackVariant = "purple",
   fallbackCaption,
   priority = false,
   sizes,
@@ -42,11 +32,9 @@ export function PlaceholderImage({
   const [errored, setErrored] = React.useState(false);
 
   const variantClasses: Record<string, string> = {
-    teal: "placeholder-block",
-    ochre:
-      "bg-gradient-to-br from-warm-ochre to-warm-ochre-soft text-charcoal",
-    maroon:
-      "bg-gradient-to-br from-deep-maroon to-[#4a161f] text-warm-off-white",
+    purple: "bg-pmt-purple-900 text-pmt-cream",
+    gold: "bg-pmt-gold text-pmt-ink",
+    maroon: "bg-pmt-maroon text-pmt-cream",
   };
 
   if (errored) {
@@ -60,7 +48,6 @@ export function PlaceholderImage({
         <div className="relative z-10 p-4 sm:p-5 text-xs font-mono uppercase tracking-wider opacity-80">
           {fallbackCaption ?? "Photo pending"}
         </div>
-        {/* Subtle diagonal stripe pattern */}
         <div
           className="absolute inset-0 opacity-30 mix-blend-overlay pointer-events-none"
           style={{
@@ -82,8 +69,7 @@ export function PlaceholderImage({
       priority={priority}
       sizes={sizes}
       onError={() => setErrored(true)}
-      // Fallback bg colour while image loads — prevents flash of broken layout
-      style={{ backgroundColor: "#0F2E2A" }}
+      style={{ backgroundColor: "#2E1F52" }}
     />
   );
 }

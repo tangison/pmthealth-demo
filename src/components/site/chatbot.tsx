@@ -3,30 +3,25 @@
 import * as React from "react";
 
 /**
- * Chatbot — self-contained, deterministic Q&A for PMT Health Care Institution.
+ * Chatbot v2 (Phase 4 restyle).
  *
- * Design constraints:
- * - No external API, no API key, no backend
- * - Uses keyword matching against a small knowledge base of real PMT facts
- * - Matches the brand system (teal + ochre, Fraunces + Work Sans + IBM Plex Mono)
- * - Accessible: ESC to close, focus trap inside the panel, ARIA roles, keyboard navigable
- * - Reduced-motion respected
- * - Appears on every page (mounted in layout.tsx)
+ * Behaviour unchanged from v1 — same 14-entry knowledge base, same
+ * accessibility (ESC, focus trap), same "no data leaves this page" framing.
  *
- * The chatbot is intentionally limited — it cannot answer questions outside
- * PMT's verified facts. When it doesn't know, it offers to direct the user
- * to the relevant page or to a campus phone number.
+ * Restyle only:
+ * - Header background: pmt-purple-900 (was forest teal)
+ * - Pulse icon + send button: gold accent (unchanged otherwise)
+ * - Trigger button FAB: fully rounded, purple-900 with gold pulse icon
+ * - Suggested-question chips: rounded-full pill, purple-900 border on light
  */
 
 type Message = {
   role: "bot" | "user";
   text: string;
-  // Optional link shown under the message
   link?: { href: string; label: string };
 };
 
 type KnowledgeEntry = {
-  // Keywords that trigger this answer (lowercased, matched against user input)
   keywords: string[];
   answer: string;
   link?: { href: string; label: string };
@@ -78,7 +73,7 @@ const knowledge: KnowledgeEntry[] = [
   {
     keywords: ["phone", "call", "contact", "number", "email", "reach", "whatsapp", "tel"],
     answer:
-      "You can reach PMT at: Windhoek 081 342 1056 · Rundu 081 721 8099 · Ongwediva 081 395 9524. The Windhoek campus is at No. 12, Sauerbruch Street, Windhoek West.",
+      "You can reach PMT at: Windhoek 081 342 1056 (or landline +264 61 250 976) · Rundu 081 721 8099 · Ongwediva 081 395 9524. Email: hello@pmt-healthcare.org. The Windhoek campus is at No. 12, Sauerbruch Street, Windhoek West.",
     link: { href: "/contact", label: "See Contact page" },
   },
   {
@@ -102,7 +97,7 @@ const knowledge: KnowledgeEntry[] = [
   {
     keywords: ["gallery", "photo", "image", "picture", "video"],
     answer:
-      "The gallery is being populated with real photos from PMT's graduations, oath ceremonies, and campus life. Branded placeholders appear until each photo is supplied.",
+      "The gallery shows real photos from PMT's graduations, oath ceremonies, classrooms, skills lab, and campus life across Windhoek, Rundu, and Ongwediva.",
     link: { href: "/gallery", label: "See Gallery" },
   },
   {
@@ -141,12 +136,11 @@ function findAnswer(input: string): Message {
   const lower = input.toLowerCase().trim();
   if (!lower) return fallback;
 
-  // Score each knowledge entry by counting keyword matches
   let best: { entry: KnowledgeEntry; score: number } | null = null;
   for (const entry of knowledge) {
     let score = 0;
     for (const kw of entry.keywords) {
-      if (lower.includes(kw)) score += kw.length; // longer matches score higher
+      if (lower.includes(kw)) score += kw.length;
     }
     if (score > 0 && (!best || score > best.score)) {
       best = { entry, score };
@@ -177,15 +171,12 @@ export function Chatbot() {
   const messagesEndRef = React.useRef<HTMLDivElement>(null);
   const triggerRef = React.useRef<HTMLButtonElement>(null);
 
-  // Auto-scroll to latest message
   React.useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth", block: "end" });
   }, [messages, isTyping]);
 
-  // Focus management when opening / closing
   React.useEffect(() => {
     if (open) {
-      // small delay so the panel is mounted
       const t = setTimeout(() => inputRef.current?.focus(), 60);
       return () => clearTimeout(t);
     } else {
@@ -193,7 +184,6 @@ export function Chatbot() {
     }
   }, [open]);
 
-  // ESC to close + focus trap
   React.useEffect(() => {
     if (!open) return;
 
@@ -204,7 +194,6 @@ export function Chatbot() {
         return;
       }
       if (e.key === "Tab" && panelRef.current) {
-        // Simple focus trap
         const focusables = panelRef.current.querySelectorAll<HTMLElement>(
           'button, [href], input, [tabindex]:not([tabindex="-1"])'
         );
@@ -234,7 +223,6 @@ export function Chatbot() {
     setInput("");
     setIsTyping(true);
 
-    // Simulate brief "thinking" delay for natural feel
     setTimeout(() => {
       const reply = findAnswer(text);
       setMessages((prev) => [...prev, reply]);
@@ -243,8 +231,6 @@ export function Chatbot() {
   }
 
   function handleQuickPrompt(prompt: string) {
-    setInput(prompt);
-    // Submit immediately
     const userMsg: Message = { role: "user", text: prompt };
     setMessages((prev) => [...prev, userMsg]);
     setInput("");
@@ -258,7 +244,7 @@ export function Chatbot() {
 
   return (
     <>
-      {/* Trigger button — floating, bottom-right */}
+      {/* Trigger — fully rounded purple FAB with gold pulse icon */}
       <button
         ref={triggerRef}
         type="button"
@@ -266,21 +252,14 @@ export function Chatbot() {
         aria-label="Open PMT assistant"
         aria-expanded={open}
         aria-controls="chatbot-panel"
-        className={`fixed bottom-5 right-5 z-50 inline-flex items-center gap-2.5 bg-forest-teal text-warm-off-white rounded-full pl-4 pr-5 py-3 shadow-lg hover:bg-forest-teal-deep transition-all focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-warm-ochre ${
+        className={`btn-physics fixed bottom-5 right-5 z-50 inline-flex items-center gap-2.5 bg-pmt-purple-900 text-pmt-cream rounded-full pl-4 pr-5 py-3 shadow-[0_8px_30px_-8px_rgba(46,31,82,0.5)] hover:bg-pmt-purple-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pmt-gold ${
           open ? "opacity-0 pointer-events-none translate-y-2" : "opacity-100"
         }`}
       >
-        {/* Pulse icon — small heartbeat glyph */}
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="none"
-          aria-hidden="true"
-        >
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
           <path
             d="M2 12h4l2-6 4 12 2-6h8"
-            stroke="#D98E2B"
+            stroke="#C9972B"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -291,31 +270,25 @@ export function Chatbot() {
         </span>
       </button>
 
-      {/* Panel */}
       {open && (
         <div
           id="chatbot-panel"
           role="dialog"
           aria-modal="true"
           aria-labelledby="chatbot-title"
-          className="fixed inset-0 sm:inset-auto sm:bottom-5 sm:right-5 sm:w-[400px] sm:max-w-[calc(100vw-2.5rem)] z-50 flex flex-col bg-warm-off-white sm:rounded-lg border border-border shadow-2xl overflow-hidden"
+          className="fixed inset-0 sm:inset-auto sm:bottom-5 sm:right-5 sm:w-[400px] sm:max-w-[calc(100vw-2.5rem)] z-50 flex flex-col bg-pmt-cream sm:rounded-2xl border border-pmt-purple-900/20 shadow-2xl overflow-hidden"
         >
-          {/* Header */}
-          <div className="bg-forest-teal text-warm-off-white px-5 py-4 flex items-center justify-between gap-3">
+          {/* Header — purple-900 */}
+          <div className="bg-pmt-purple-900 text-pmt-cream px-5 py-4 flex items-center justify-between gap-3">
             <div className="flex items-center gap-3 min-w-0">
               <span
-                className="inline-flex w-9 h-9 rounded-full bg-warm-off-white/10 items-center justify-center flex-shrink-0"
+                className="inline-flex w-9 h-9 rounded-full bg-pmt-cream/10 items-center justify-center flex-shrink-0"
                 aria-hidden="true"
               >
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
                   <path
                     d="M2 12h4l2-6 4 12 2-6h8"
-                    stroke="#D98E2B"
+                    stroke="#C9972B"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -323,13 +296,10 @@ export function Chatbot() {
                 </svg>
               </span>
               <div className="min-w-0">
-                <h2
-                  id="chatbot-title"
-                  className="font-display text-lg leading-none"
-                >
+                <h2 id="chatbot-title" className="font-display text-lg leading-none">
                   PMT Assistant
                 </h2>
-                <p className="font-mono text-[10px] uppercase tracking-widest text-warm-off-white/60 mt-0.5">
+                <p className="font-mono text-[10px] uppercase tracking-widest text-pmt-cream/60 mt-0.5">
                   Online · Answers from verified facts
                 </p>
               </div>
@@ -338,15 +308,9 @@ export function Chatbot() {
               type="button"
               onClick={() => setOpen(false)}
               aria-label="Close PMT assistant"
-              className="inline-flex w-8 h-8 items-center justify-center rounded-sm hover:bg-warm-off-white/10 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-warm-ochre"
+              className="btn-physics inline-flex w-8 h-8 items-center justify-center rounded-full hover:bg-pmt-cream/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pmt-gold"
             >
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 18 18"
-                fill="none"
-                aria-hidden="true"
-              >
+              <svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true">
                 <path
                   d="M4 4L14 14M14 4L4 14"
                   stroke="currentColor"
@@ -360,28 +324,26 @@ export function Chatbot() {
           {/* Messages */}
           <div
             ref={panelRef}
-            className="flex-1 overflow-y-auto p-4 space-y-4 bg-warm-off-white"
+            className="flex-1 overflow-y-auto p-4 space-y-4 bg-pmt-cream"
             style={{ maxHeight: "60vh", minHeight: "280px" }}
           >
             {messages.map((msg, i) => (
               <div
                 key={i}
-                className={`flex ${
-                  msg.role === "user" ? "justify-end" : "justify-start"
-                }`}
+                className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
               >
                 <div
                   className={`max-w-[85%] ${
                     msg.role === "user"
-                      ? "bg-warm-ochre text-charcoal rounded-lg rounded-br-sm"
-                      : "bg-warm-off-white-2 text-charcoal rounded-lg rounded-bl-sm border border-border"
+                      ? "bg-pmt-gold text-pmt-ink rounded-2xl rounded-br-md"
+                      : "bg-white text-pmt-ink rounded-2xl rounded-bl-md border border-pmt-purple-900/10"
                   } px-4 py-2.5`}
                 >
                   <p className="text-sm leading-relaxed">{msg.text}</p>
                   {msg.link && (
                     <a
                       href={msg.link.href}
-                      className="mt-2 inline-flex items-center gap-1 font-mono text-[10px] uppercase tracking-widest text-warm-ochre hover:underline underline-offset-2"
+                      className="mt-2 inline-flex items-center gap-1 font-mono text-[10px] uppercase tracking-widest text-pmt-gold hover:underline underline-offset-2"
                     >
                       {msg.link.label}
                       <span aria-hidden="true">→</span>
@@ -393,30 +355,20 @@ export function Chatbot() {
 
             {isTyping && (
               <div className="flex justify-start">
-                <div className="bg-warm-off-white-2 border border-border rounded-lg rounded-bl-sm px-4 py-3">
+                <div className="bg-white border border-pmt-purple-900/10 rounded-2xl rounded-bl-md px-4 py-3">
                   <div className="flex gap-1" aria-label="Assistant is typing">
-                    <span
-                      className="inline-block w-1.5 h-1.5 rounded-full bg-forest-teal/60 animate-bounce"
-                      style={{ animationDelay: "0ms" }}
-                    />
-                    <span
-                      className="inline-block w-1.5 h-1.5 rounded-full bg-forest-teal/60 animate-bounce"
-                      style={{ animationDelay: "150ms" }}
-                    />
-                    <span
-                      className="inline-block w-1.5 h-1.5 rounded-full bg-forest-teal/60 animate-bounce"
-                      style={{ animationDelay: "300ms" }}
-                    />
+                    <span className="inline-block w-1.5 h-1.5 rounded-full bg-pmt-purple-500/60 animate-bounce" style={{ animationDelay: "0ms" }} />
+                    <span className="inline-block w-1.5 h-1.5 rounded-full bg-pmt-purple-500/60 animate-bounce" style={{ animationDelay: "150ms" }} />
+                    <span className="inline-block w-1.5 h-1.5 rounded-full bg-pmt-purple-500/60 animate-bounce" style={{ animationDelay: "300ms" }} />
                     <span className="sr-only">Assistant is typing…</span>
                   </div>
                 </div>
               </div>
             )}
 
-            {/* Quick prompts — show only when few messages */}
             {messages.length <= 1 && !isTyping && (
               <div className="pt-2">
-                <p className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground mb-2">
+                <p className="font-mono text-[10px] uppercase tracking-widest text-pmt-ink-soft mb-2">
                   Try one of these
                 </p>
                 <div className="flex flex-wrap gap-2">
@@ -425,7 +377,7 @@ export function Chatbot() {
                       key={prompt}
                       type="button"
                       onClick={() => handleQuickPrompt(prompt)}
-                      className="text-xs bg-warm-off-white-2 border border-border text-forest-teal px-3 py-1.5 rounded-full hover:bg-forest-teal hover:text-warm-off-white hover:border-forest-teal transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-warm-ochre"
+                      className="btn-physics text-xs bg-white border border-pmt-purple-900/30 text-pmt-purple-900 px-3 py-1.5 rounded-full hover:bg-pmt-purple-900 hover:text-pmt-cream hover:border-pmt-purple-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pmt-gold"
                     >
                       {prompt}
                     </button>
@@ -437,10 +389,9 @@ export function Chatbot() {
             <div ref={messagesEndRef} />
           </div>
 
-          {/* Input */}
           <form
             onSubmit={handleSubmit}
-            className="border-t border-border bg-warm-off-white p-3 flex items-center gap-2"
+            className="border-t border-pmt-purple-900/10 bg-pmt-cream p-3 flex items-center gap-2"
           >
             <label htmlFor="chatbot-input" className="sr-only">
               Type your question
@@ -453,21 +404,15 @@ export function Chatbot() {
               onChange={(e) => setInput(e.target.value)}
               placeholder="Type your question…"
               autoComplete="off"
-              className="flex-1 bg-warm-off-white-2 border border-border px-3 py-2.5 text-sm rounded-sm focus:border-forest-teal focus:outline-none focus:ring-2 focus:ring-warm-ochre/40 transition-colors"
+              className="flex-1 bg-white border border-pmt-purple-900/15 px-4 py-2.5 text-sm rounded-full focus:border-pmt-purple-500 focus:outline-none focus:ring-2 focus:ring-pmt-gold/40 transition-colors"
             />
             <button
               type="submit"
               disabled={!input.trim()}
               aria-label="Send message"
-              className="inline-flex w-10 h-10 items-center justify-center bg-warm-ochre text-charcoal rounded-sm hover:bg-warm-ochre-soft transition-colors disabled:opacity-40 disabled:cursor-not-allowed focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-warm-ochre"
+              className="btn-physics inline-flex w-10 h-10 items-center justify-center bg-pmt-gold text-pmt-ink rounded-full hover:bg-pmt-gold-soft disabled:opacity-40 disabled:cursor-not-allowed focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pmt-gold"
             >
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 18 18"
-                fill="none"
-                aria-hidden="true"
-              >
+              <svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true">
                 <path
                   d="M2 9L16 2L9 16L7.5 10.5L2 9Z"
                   stroke="currentColor"
@@ -479,9 +424,8 @@ export function Chatbot() {
             </button>
           </form>
 
-          {/* Footer — privacy note */}
-          <div className="bg-forest-teal/[0.03] border-t border-border px-4 py-2">
-            <p className="font-mono text-[10px] text-muted-foreground text-center">
+          <div className="bg-pmt-purple-900/[0.03] border-t border-pmt-purple-900/10 px-4 py-2">
+            <p className="font-mono text-[10px] text-pmt-ink-soft text-center">
               Self-contained · No data leaves this page · Tap ESC to close
             </p>
           </div>

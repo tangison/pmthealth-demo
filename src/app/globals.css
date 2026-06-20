@@ -4,47 +4,62 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
-  PMT Health Care Institution — Brand System
-  Derived from the institution's "quality, compassion, trust" voice and the
-  ceremonial weight of the nursing oath. Teal carries structure, ochre is the
-  only "alive" accent, maroon is reserved for ceremonial contexts only.
+  PMT Health Care Institution — Brand System v2 (Rebuild)
+  ---------------------------------------------------------
+  PHASE 2 COLOR CORRECTION: The prior build's deep green theme has been
+  entirely replaced with the PMT purple system. The gold accent is retained
+  unchanged. Light content sections remain warm-white as before.
+
+  Color tokens (final, non-negotiable):
+    --pmt-purple-900  #2E1F52  (replaces every green background/section)
+    --pmt-purple-700  #432D72  (replaces mid-tone green — cards, panels)
+    --pmt-purple-500  #6347A0  (replaces hover/active green states)
+    --pmt-gold        #C9972B  (unchanged — Apply Now, accent text, pulse icon)
+    --pmt-ink         #1A1726  (body ink on light sections)
+    --pmt-cream       #FAF7F2  (warm off-white — light sections, unchanged)
+    --pmt-cream-2     #F2EDE3  (slightly deeper cream for secondary panels)
+    --pmt-maroon      #6B1F2A  (ceremonial accent — used sparingly, unchanged)
 */
 
 @theme inline {
-  /* Brand colors */
-  --color-forest-teal: #16433D;
-  --color-forest-teal-deep: #0F2E2A;
-  --color-forest-teal-soft: #1E5650;
-  --color-warm-ochre: #D98E2B;
-  --color-warm-ochre-soft: #E5A852;
-  --color-deep-maroon: #6B1F2A;
-  --color-warm-off-white: #FAF7F2;
-  --color-warm-off-white-2: #F2EDE3;
-  --color-charcoal: #1A1A18;
-  --color-charcoal-soft: #3A3A36;
+  /* Brand colors — PMT purple system */
+  --color-pmt-purple-900: #2E1F52;
+  --color-pmt-purple-800: #382564;
+  --color-pmt-purple-700: #432D72;
+  --color-pmt-purple-600: #553A8E;
+  --color-pmt-purple-500: #6347A0;
+  --color-pmt-purple-400: #8268B8;
+  --color-pmt-gold: #C9972B;
+  --color-pmt-gold-soft: #D9AC4E;
+  --color-pmt-gold-deep: #A87C1F;
+  --color-pmt-ink: #1A1726;
+  --color-pmt-ink-soft: #3D3654;
+  --color-pmt-cream: #FAF7F2;
+  --color-pmt-cream-2: #F2EDE3;
+  --color-pmt-maroon: #6B1F2A;
 
-  /* Surface tokens */
+  /* Surface tokens — mapped onto the new brand system */
   --color-background: #FAF7F2;
-  --color-foreground: #1A1A18;
+  --color-foreground: #1A1726;
   --color-card: #FFFFFF;
-  --color-card-foreground: #1A1A18;
+  --color-card-foreground: #1A1726;
   --color-popover: #FFFFFF;
-  --color-popover-foreground: #1A1A18;
-  --color-primary: #16433D;
+  --color-popover-foreground: #1A1726;
+  --color-primary: #2E1F52;
   --color-primary-foreground: #FAF7F2;
   --color-secondary: #F2EDE3;
-  --color-secondary-foreground: #16433D;
+  --color-secondary-foreground: #2E1F52;
   --color-muted: #F2EDE3;
-  --color-muted-foreground: #5C5A52;
-  --color-accent: #D98E2B;
-  --color-accent-foreground: #1A1A18;
+  --color-muted-foreground: #5C566B;
+  --color-accent: #C9972B;
+  --color-accent-foreground: #1A1726;
   --color-destructive: #6B1F2A;
   --color-destructive-foreground: #FAF7F2;
   --color-border: #E6DFD0;
   --color-input: #E6DFD0;
-  --color-ring: #D98E2B;
+  --color-ring: #C9972B;
 
-  /* Typography */
+  /* Typography — unchanged from prior build (per Phase 3 directive) */
   --font-display: var(--font-fraunces), Georgia, serif;
   --font-sans: var(--font-work-sans), system-ui, sans-serif;
   --font-mono: var(--font-plex-mono), "SFMono-Regular", monospace;
@@ -54,20 +69,20 @@
   --radius-lg: 8px;
   --radius-xl: 12px;
 
-  /* keep chart vars so existing shadcn components don't break */
-  --color-chart-1: #16433D;
-  --color-chart-2: #D98E2B;
+  /* Chart tokens kept compatible with existing shadcn components */
+  --color-chart-1: #2E1F52;
+  --color-chart-2: #C9972B;
   --color-chart-3: #6B1F2A;
-  --color-chart-4: #1E5650;
-  --color-chart-5: #5C5A52;
+  --color-chart-4: #432D72;
+  --color-chart-5: #5C566B;
   --color-sidebar: #FAF7F2;
-  --color-sidebar-foreground: #1A1A18;
-  --color-sidebar-primary: #16433D;
+  --color-sidebar-foreground: #1A1726;
+  --color-sidebar-primary: #2E1F52;
   --color-sidebar-primary-foreground: #FAF7F2;
   --color-sidebar-accent: #F2EDE3;
-  --color-sidebar-accent-foreground: #16433D;
+  --color-sidebar-accent-foreground: #2E1F52;
   --color-sidebar-border: #E6DFD0;
-  --color-sidebar-ring: #D98E2B;
+  --color-sidebar-ring: #C9972B;
 }
 
 :root {
@@ -92,32 +107,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Selection */
 ::selection {
-  background-color: var(--color-warm-ochre);
-  color: var(--color-charcoal);
+  background-color: var(--color-pmt-gold);
+  color: var(--color-pmt-ink);
 }
 
-/* Focus rings — always visible, accessible */
+/* Focus rings — always visible, accessible, gold */
 :focus-visible {
-  outline: 2px solid var(--color-warm-ochre);
+  outline: 2px solid var(--color-pmt-gold);
   outline-offset: 2px;
   border-radius: 2px;
 }
 
-/* Display font helper */
 .font-display {
   font-family: var(--font-display);
   font-optical-sizing: auto;
 }
 
-/* Mono utility — used for dates, accreditation numbers, campus codes */
 .font-mono {
   font-family: var(--font-mono);
   font-feature-settings: "zero";
 }
 
-/* The Pulse Line — single continuous line motif, used ONCE per page max */
+/* ─────────── Pulse Line signature motif ─────────── */
 .pulse-line-path {
   stroke-dasharray: 2400;
   stroke-dashoffset: 2400;
@@ -125,12 +137,9 @@ body {
 }
 
 @keyframes pulse-draw {
-  to {
-    stroke-dashoffset: 0;
-  }
+  to { stroke-dashoffset: 0; }
 }
 
-/* Heartbeat blip at the apex */
 .pulse-blip {
   opacity: 0;
   animation: pulse-blip 0.4s ease-out 2.6s forwards;
@@ -150,64 +159,87 @@ body {
     animation: none;
     opacity: 1;
   }
-  html {
-    scroll-behavior: auto;
-  }
+  html { scroll-behavior: auto; }
   * {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
   }
 }
 
-/* Placeholder image block — graceful teal/ochre fallback when real photo missing */
-.placeholder-block {
-  background:
-    linear-gradient(135deg, rgba(22, 67, 61, 0.92) 0%, rgba(15, 46, 42, 0.96) 100%);
-  position: relative;
-  overflow: hidden;
+/* ─────────── Glass-pill navigation ─────────── */
+.glass-pill {
+  background-color: rgba(250, 247, 242, 0.78);
+  backdrop-filter: saturate(180%) blur(18px);
+  -webkit-backdrop-filter: saturate(180%) blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow:
+    0 1px 0 rgba(46, 31, 82, 0.04),
+    0 10px 30px -10px rgba(46, 31, 82, 0.18);
 }
 
-.placeholder-block::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image:
-    radial-gradient(circle at 20% 30%, rgba(217, 142, 43, 0.18) 0%, transparent 40%),
-    radial-gradient(circle at 80% 70%, rgba(217, 142, 43, 0.12) 0%, transparent 35%);
-  pointer-events: none;
+.glass-pill-dark {
+  background-color: rgba(46, 31, 82, 0.78);
+  backdrop-filter: saturate(180%) blur(18px);
+  -webkit-backdrop-filter: saturate(180%) blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 1px 0 rgba(0, 0, 0, 0.2),
+    0 10px 30px -10px rgba(0, 0, 0, 0.4);
 }
 
-.placeholder-block::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: repeating-linear-gradient(
-    45deg,
-    transparent 0,
-    transparent 12px,
-    rgba(250, 247, 242, 0.025) 12px,
-    rgba(250, 247, 242, 0.025) 13px
-  );
-  pointer-events: none;
+/* ─────────── Button hover physics ─────────── */
+.btn-physics {
+  transition:
+    transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+  will-change: transform;
 }
 
-/* Decorative oath divider — used on Accreditation + About pages only */
+.btn-physics:hover:not(:disabled) {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow:
+    0 1px 0 rgba(0,0,0,0.06),
+    0 12px 28px -8px rgba(46, 31, 82, 0.35);
+}
+
+.btn-physics:active:not(:disabled) {
+  transform: translateY(0) scale(0.98);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.06);
+}
+
+/* ─────────── Card hover physics (Phase 3 directive) ─────────── */
+.card-physics {
+  transition:
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.2s ease;
+}
+
+.card-physics:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -16px rgba(46, 31, 82, 0.25);
+}
+
+/* ─────────── Decorative oath divider (maroon, ceremonial only) ─────────── */
 .oath-rule {
   display: block;
   width: 64px;
   height: 1px;
-  background-color: var(--color-deep-maroon);
+  background-color: var(--color-pmt-maroon);
 }
 
-/* Subtle paper grain on warm backgrounds */
+/* ─────────── Paper grain ─────────── */
 .paper-grain {
   background-image:
-    radial-gradient(circle at 50% 50%, rgba(26, 26, 24, 0.015) 0%, transparent 60%);
+    radial-gradient(circle at 50% 50%, rgba(26, 23, 38, 0.015) 0%, transparent 60%);
 }
 
-/* Link underline animation for body links */
+/* ─────────── Link underline ─────────── */
 .link-underline {
-  background-image: linear-gradient(var(--color-warm-ochre), var(--color-warm-ochre));
+  background-image: linear-gradient(var(--color-pmt-gold), var(--color-pmt-gold));
   background-position: 0 100%;
   background-repeat: no-repeat;
   background-size: 0% 1px;
@@ -215,4 +247,58 @@ body {
 }
 .link-underline:hover {
   background-size: 100% 1px;
+}
+
+/* ─────────── Gapless bento grid (Phase 3 directive) ─────────── */
+.bento-grid {
+  display: grid;
+  grid-auto-flow: dense;
+  gap: 0;
+}
+
+/* ─────────── GSAP scroll reveal helpers ─────────── */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.reveal-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(1.04);
+}
+
+.reveal-scale.is-visible {
+  opacity: 1;
+  transform: scale(1);
+  transition:
+    opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-up,
+  .reveal-scale {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* ─────────── Image card hover zoom ─────────── */
+.img-zoom {
+  overflow: hidden;
+}
+.img-zoom img {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.img-zoom:hover img {
+  transform: scale(1.04);
 }
