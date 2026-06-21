@@ -1,0 +1,729 @@
+{
+  "conversions": [
+    {
+      "original": "/home/z/my-project/public/images/crawled/banner-students-classroom.jpg",
+      "webp": "/home/z/my-project/public/images/crawled/banner-students-classroom.webp",
+      "old_size": 286688,
+      "new_size": 170468,
+      "reduction_pct": 40.5
+    },
+    {
+      "original": "/home/z/my-project/public/images/crawled/founder-rutendo-zvidza.jpg",
+      "webp": "/home/z/my-project/public/images/crawled/founder-rutendo-zvidza.webp",
+      "old_size": 9727,
+      "new_size": 6702,
+      "reduction_pct": 31.1
+    },
+    {
+      "original": "/home/z/my-project/public/images/crawled/logo-anbi.png",
+      "webp": "/home/z/my-project/public/images/crawled/logo-anbi.webp",
+      "old_size": 18947,
+      "new_size": 7582,
+      "reduction_pct": 60.0
+    },
+    {
+      "original": "/home/z/my-project/public/images/crawled/logo-circular-badge.png",
+      "webp": "/home/z/my-project/public/images/crawled/logo-circular-badge.webp",
+      "old_size": 163789,
+      "new_size": 45566,
+      "reduction_pct": 72.2
+    },
+    {
+      "original": "/home/z/my-project/public/images/crawled/logo-hif.png",
+      "webp": "/home/z/my-project/public/images/crawled/logo-hif.webp",
+      "old_size": 33753,
+      "new_size": 6128,
+      "reduction_pct": 81.8
+    },
+    {
+      "original": "/home/z/my-project/public/images/crawled/logo-hpcna.png",
+      "webp": "/home/z/my-project/public/images/crawled/logo-hpcna.webp",
+      "old_size": 35106,
+      "new_size": 10208,
+      "reduction_pct": 70.9
+    },
+    {
+      "original": "/home/z/my-project/public/images/crawled/logo-icare-mou.png",
+      "webp": "/home/z/my-project/public/images/crawled/logo-icare-mou.webp",
+      "old_size": 38866,
+      "new_size": 39524,
+      "reduction_pct": -1.7
+    },
+    {
+      "original": "/home/z/my-project/public/images/crawled/logo-minbuza.png",
+      "webp": "/home/z/my-project/public/images/crawled/logo-minbuza.webp",
+      "old_size": 22201,
+      "new_size": 5100,
+      "reduction_pct": 77.0
+    },
+    {
+      "original": "/home/z/my-project/public/images/crawled/logo-namibia-medical-care.png",
+      "webp": "/home/z/my-project/public/images/crawled/logo-namibia-medical-care.webp",
+      "old_size": 11119,
+      "new_size": 5354,
+      "reduction_pct": 51.8
+    },
+    {
+      "original": "/home/z/my-project/public/images/crawled/logo-namibia-mof-eprocurement.png",
+      "webp": "/home/z/my-project/public/images/crawled/logo-namibia-mof-eprocurement.webp",
+      "old_size": 92150,
+      "new_size": 10398,
+      "reduction_pct": 88.7
+    },
+    {
+      "original": "/home/z/my-project/public/images/crawled/logo-nip.png",
+      "webp": "/home/z/my-project/public/images/crawled/logo-nip.webp",
+      "old_size": 6969,
+      "new_size": 3416,
+      "reduction_pct": 51.0
+    },
+    {
+      "original": "/home/z/my-project/public/images/crawled/logo-npl.png",
+      "webp": "/home/z/my-project/public/images/crawled/logo-npl.webp",
+      "old_size": 62655,
+      "new_size": 15742,
+      "reduction_pct": 74.9
+    },
+    {
+      "original": "/home/z/my-project/public/images/crawled/logo-nqa.png",
+      "webp": "/home/z/my-project/public/images/crawled/logo-nqa.webp",
+      "old_size": 35100,
+      "new_size": 51714,
+      "reduction_pct": -47.3
+    },
+    {
+      "original": "/home/z/my-project/public/images/crawled/logo-nta.png",
+      "webp": "/home/z/my-project/public/images/crawled/logo-nta.webp",
+      "old_size": 19191,
+      "new_size": 6864,
+      "reduction_pct": 64.2
+    },
+    {
+      "original": "/home/z/my-project/public/images/crawled/logo-ucla-seal.png",
+      "webp": "/home/z/my-project/public/images/crawled/logo-ucla-seal.webp",
+      "old_size": 50015,
+      "new_size": 31364,
+      "reduction_pct": 37.3
+    },
+    {
+      "original": "/home/z/my-project/public/images/crawled/photo-nurses-day.jpg",
+      "webp": "/home/z/my-project/public/images/crawled/photo-nurses-day.webp",
+      "old_size": 39678,
+      "new_size": 26384,
+      "reduction_pct": 33.5
+    },
+    {
+      "original": "/home/z/my-project/public/images/crawled/photo-safety-vests.jpg",
+      "webp": "/home/z/my-project/public/images/crawled/photo-safety-vests.webp",
+      "old_size": 59872,
+      "new_size": 45652,
+      "reduction_pct": 23.8
+    },
+    {
+      "original": "/home/z/my-project/public/images/crawled/students-campus-building.jpg",
+      "webp": "/home/z/my-project/public/images/crawled/students-campus-building.webp",
+      "old_size": 137068,
+      "new_size": 123738,
+      "reduction_pct": 9.7
+    },
+    {
+      "original": "/home/z/my-project/public/images/crawled/students-classroom-01-sm.jpg",
+      "webp": "/home/z/my-project/public/images/crawled/students-classroom-01-sm.webp",
+      "old_size": 105590,
+      "new_size": 53624,
+      "reduction_pct": 49.2
+    },
+    {
+      "original": "/home/z/my-project/public/images/crawled/students-classroom-01.jpg",
+      "webp": "/home/z/my-project/public/images/crawled/students-classroom-01.webp",
+      "old_size": 488666,
+      "new_size": 139604,
+      "reduction_pct": 71.4
+    },
+    {
+      "original": "/home/z/my-project/public/images/crawled/students-classroom-02-sm.jpg",
+      "webp": "/home/z/my-project/public/images/crawled/students-classroom-02-sm.webp",
+      "old_size": 123967,
+      "new_size": 68528,
+      "reduction_pct": 44.7
+    },
+    {
+      "original": "/home/z/my-project/public/images/crawled/students-classroom-02.jpg",
+      "webp": "/home/z/my-project/public/images/crawled/students-classroom-02.webp",
+      "old_size": 509676,
+      "new_size": 159852,
+      "reduction_pct": 68.6
+    },
+    {
+      "original": "/home/z/my-project/public/images/crawled/students-ground-gathering.jpg",
+      "webp": "/home/z/my-project/public/images/crawled/students-ground-gathering.webp",
+      "old_size": 57174,
+      "new_size": 47458,
+      "reduction_pct": 17.0
+    },
+    {
+      "original": "/home/z/my-project/public/images/crawled/students-pastor.jpg",
+      "webp": "/home/z/my-project/public/images/crawled/students-pastor.webp",
+      "old_size": 273149,
+      "new_size": 62782,
+      "reduction_pct": 77.0
+    },
+    {
+      "original": "/home/z/my-project/public/images/crawled/students-practical-room-sm.jpg",
+      "webp": "/home/z/my-project/public/images/crawled/students-practical-room-sm.webp",
+      "old_size": 147754,
+      "new_size": 87344,
+      "reduction_pct": 40.9
+    },
+    {
+      "original": "/home/z/my-project/public/images/crawled/students-practical-room.jpg",
+      "webp": "/home/z/my-project/public/images/crawled/students-practical-room.webp",
+      "old_size": 439227,
+      "new_size": 282510,
+      "reduction_pct": 35.7
+    },
+    {
+      "original": "/home/z/my-project/public/images/crawled/students-skills-lab.jpg",
+      "webp": "/home/z/my-project/public/images/crawled/students-skills-lab.webp",
+      "old_size": 43792,
+      "new_size": 30182,
+      "reduction_pct": 31.1
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/abstract-bg-purple.png",
+      "webp": "/home/z/my-project/public/images/stock/abstract-bg-purple.webp",
+      "old_size": 65506,
+      "new_size": 28258,
+      "reduction_pct": 56.9
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/bloodpressure-01.jpg",
+      "webp": "/home/z/my-project/public/images/stock/bloodpressure-01.webp",
+      "old_size": 118744,
+      "new_size": 79732,
+      "reduction_pct": 32.9
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/bloodpressure-02.jpg",
+      "webp": "/home/z/my-project/public/images/stock/bloodpressure-02.webp",
+      "old_size": 150564,
+      "new_size": 84802,
+      "reduction_pct": 43.7
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/bloodpressure-03.jpg",
+      "webp": "/home/z/my-project/public/images/stock/bloodpressure-03.webp",
+      "old_size": 129207,
+      "new_size": 86712,
+      "reduction_pct": 32.9
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/bloodpressure-04.jpg",
+      "webp": "/home/z/my-project/public/images/stock/bloodpressure-04.webp",
+      "old_size": 141121,
+      "new_size": 107758,
+      "reduction_pct": 23.6
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/classroom-01.jpg",
+      "webp": "/home/z/my-project/public/images/stock/classroom-01.webp",
+      "old_size": 160625,
+      "new_size": 113958,
+      "reduction_pct": 29.1
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/classroom-02.jpg",
+      "webp": "/home/z/my-project/public/images/stock/classroom-02.webp",
+      "old_size": 228886,
+      "new_size": 82498,
+      "reduction_pct": 64.0
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/classroom-03.jpg",
+      "webp": "/home/z/my-project/public/images/stock/classroom-03.webp",
+      "old_size": 246332,
+      "new_size": 172606,
+      "reduction_pct": 29.9
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/classroom-04.png",
+      "webp": "/home/z/my-project/public/images/stock/classroom-04.webp",
+      "old_size": 2092507,
+      "new_size": 77354,
+      "reduction_pct": 96.3
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/classroom-05.jpg",
+      "webp": "/home/z/my-project/public/images/stock/classroom-05.webp",
+      "old_size": 376910,
+      "new_size": 84780,
+      "reduction_pct": 77.5
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/classroom-06.jpg",
+      "webp": "/home/z/my-project/public/images/stock/classroom-06.webp",
+      "old_size": 549581,
+      "new_size": 153866,
+      "reduction_pct": 72.0
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/clinical-01.jpg",
+      "webp": "/home/z/my-project/public/images/stock/clinical-01.webp",
+      "old_size": 319393,
+      "new_size": 154330,
+      "reduction_pct": 51.7
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/clinical-02.jpg",
+      "webp": "/home/z/my-project/public/images/stock/clinical-02.webp",
+      "old_size": 154974,
+      "new_size": 92002,
+      "reduction_pct": 40.6
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/clinical-03.png",
+      "webp": "/home/z/my-project/public/images/stock/clinical-03.webp",
+      "old_size": 2072548,
+      "new_size": 91924,
+      "reduction_pct": 95.6
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/clinical-04.jpg",
+      "webp": "/home/z/my-project/public/images/stock/clinical-04.webp",
+      "old_size": 144953,
+      "new_size": 59614,
+      "reduction_pct": 58.9
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/clinical-05.jpg",
+      "webp": "/home/z/my-project/public/images/stock/clinical-05.webp",
+      "old_size": 228420,
+      "new_size": 120288,
+      "reduction_pct": 47.3
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/community-01.jpg",
+      "webp": "/home/z/my-project/public/images/stock/community-01.webp",
+      "old_size": 504751,
+      "new_size": 412382,
+      "reduction_pct": 18.3
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/community-02.jpg",
+      "webp": "/home/z/my-project/public/images/stock/community-02.webp",
+      "old_size": 238125,
+      "new_size": 168658,
+      "reduction_pct": 29.2
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/community-03.jpg",
+      "webp": "/home/z/my-project/public/images/stock/community-03.webp",
+      "old_size": 683966,
+      "new_size": 312302,
+      "reduction_pct": 54.3
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/community-04.png",
+      "webp": "/home/z/my-project/public/images/stock/community-04.webp",
+      "old_size": 2239532,
+      "new_size": 147924,
+      "reduction_pct": 93.4
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/corridor-01.jpg",
+      "webp": "/home/z/my-project/public/images/stock/corridor-01.webp",
+      "old_size": 125007,
+      "new_size": 93122,
+      "reduction_pct": 25.5
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/corridor-02.jpg",
+      "webp": "/home/z/my-project/public/images/stock/corridor-02.webp",
+      "old_size": 54497,
+      "new_size": 31364,
+      "reduction_pct": 42.4
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/corridor-03.jpg",
+      "webp": "/home/z/my-project/public/images/stock/corridor-03.webp",
+      "old_size": 94697,
+      "new_size": 45680,
+      "reduction_pct": 51.8
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/corridor-04.jpg",
+      "webp": "/home/z/my-project/public/images/stock/corridor-04.webp",
+      "old_size": 187341,
+      "new_size": 47938,
+      "reduction_pct": 74.4
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/diploma-01.jpg",
+      "webp": "/home/z/my-project/public/images/stock/diploma-01.webp",
+      "old_size": 150660,
+      "new_size": 123304,
+      "reduction_pct": 18.2
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/diploma-02.jpg",
+      "webp": "/home/z/my-project/public/images/stock/diploma-02.webp",
+      "old_size": 84824,
+      "new_size": 54118,
+      "reduction_pct": 36.2
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/diploma-03.jpg",
+      "webp": "/home/z/my-project/public/images/stock/diploma-03.webp",
+      "old_size": 92439,
+      "new_size": 59278,
+      "reduction_pct": 35.9
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/diploma-04.jpg",
+      "webp": "/home/z/my-project/public/images/stock/diploma-04.webp",
+      "old_size": 51125,
+      "new_size": 22244,
+      "reduction_pct": 56.5
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/graduation-01.jpg",
+      "webp": "/home/z/my-project/public/images/stock/graduation-01.webp",
+      "old_size": 93424,
+      "new_size": 43748,
+      "reduction_pct": 53.2
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/graduation-02.jpg",
+      "webp": "/home/z/my-project/public/images/stock/graduation-02.webp",
+      "old_size": 93631,
+      "new_size": 98484,
+      "reduction_pct": -5.2
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/graduation-03.jpg",
+      "webp": "/home/z/my-project/public/images/stock/graduation-03.webp",
+      "old_size": 528911,
+      "new_size": 138240,
+      "reduction_pct": 73.9
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/graduation-04.jpg",
+      "webp": "/home/z/my-project/public/images/stock/graduation-04.webp",
+      "old_size": 177279,
+      "new_size": 67232,
+      "reduction_pct": 62.1
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/graduation-05.jpg",
+      "webp": "/home/z/my-project/public/images/stock/graduation-05.webp",
+      "old_size": 198520,
+      "new_size": 107112,
+      "reduction_pct": 46.0
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/graduation-06.jpg",
+      "webp": "/home/z/my-project/public/images/stock/graduation-06.webp",
+      "old_size": 337880,
+      "new_size": 182594,
+      "reduction_pct": 46.0
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/group-01.jpg",
+      "webp": "/home/z/my-project/public/images/stock/group-01.webp",
+      "old_size": 96220,
+      "new_size": 62296,
+      "reduction_pct": 35.3
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/group-02.jpg",
+      "webp": "/home/z/my-project/public/images/stock/group-02.webp",
+      "old_size": 118449,
+      "new_size": 98352,
+      "reduction_pct": 17.0
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/group-03.jpg",
+      "webp": "/home/z/my-project/public/images/stock/group-03.webp",
+      "old_size": 100468,
+      "new_size": 64108,
+      "reduction_pct": 36.2
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/group-04.jpg",
+      "webp": "/home/z/my-project/public/images/stock/group-04.webp",
+      "old_size": 125362,
+      "new_size": 42696,
+      "reduction_pct": 65.9
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/hospital-01.jpg",
+      "webp": "/home/z/my-project/public/images/stock/hospital-01.webp",
+      "old_size": 197636,
+      "new_size": 106020,
+      "reduction_pct": 46.4
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/hospital-02.jpg",
+      "webp": "/home/z/my-project/public/images/stock/hospital-02.webp",
+      "old_size": 96656,
+      "new_size": 49532,
+      "reduction_pct": 48.8
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/hospital-03.jpg",
+      "webp": "/home/z/my-project/public/images/stock/hospital-03.webp",
+      "old_size": 107982,
+      "new_size": 73140,
+      "reduction_pct": 32.3
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/hospital-04.jpg",
+      "webp": "/home/z/my-project/public/images/stock/hospital-04.webp",
+      "old_size": 107179,
+      "new_size": 57610,
+      "reduction_pct": 46.2
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/midwife-01.jpg",
+      "webp": "/home/z/my-project/public/images/stock/midwife-01.webp",
+      "old_size": 332251,
+      "new_size": 173064,
+      "reduction_pct": 47.9
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/midwife-02.jpg",
+      "webp": "/home/z/my-project/public/images/stock/midwife-02.webp",
+      "old_size": 2823657,
+      "new_size": 300710,
+      "reduction_pct": 89.4
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/midwife-03.jpg",
+      "webp": "/home/z/my-project/public/images/stock/midwife-03.webp",
+      "old_size": 691143,
+      "new_size": 331416,
+      "reduction_pct": 52.0
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/midwife-04.jpg",
+      "webp": "/home/z/my-project/public/images/stock/midwife-04.webp",
+      "old_size": 200832,
+      "new_size": 107576,
+      "reduction_pct": 46.4
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/midwife-05.jpg",
+      "webp": "/home/z/my-project/public/images/stock/midwife-05.webp",
+      "old_size": 3864730,
+      "new_size": 359500,
+      "reduction_pct": 90.7
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/oath-01.jpg",
+      "webp": "/home/z/my-project/public/images/stock/oath-01.webp",
+      "old_size": 124544,
+      "new_size": 76404,
+      "reduction_pct": 38.7
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/oath-02.jpg",
+      "webp": "/home/z/my-project/public/images/stock/oath-02.webp",
+      "old_size": 312684,
+      "new_size": 180216,
+      "reduction_pct": 42.4
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/oath-03.png",
+      "webp": "/home/z/my-project/public/images/stock/oath-03.webp",
+      "old_size": 1813808,
+      "new_size": 269416,
+      "reduction_pct": 85.1
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/oath-04.jpg",
+      "webp": "/home/z/my-project/public/images/stock/oath-04.webp",
+      "old_size": 217609,
+      "new_size": 87814,
+      "reduction_pct": 59.6
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/placement-01.jpg",
+      "webp": "/home/z/my-project/public/images/stock/placement-01.webp",
+      "old_size": 198860,
+      "new_size": 127224,
+      "reduction_pct": 36.0
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/placement-02.jpg",
+      "webp": "/home/z/my-project/public/images/stock/placement-02.webp",
+      "old_size": 216236,
+      "new_size": 139860,
+      "reduction_pct": 35.3
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/placement-03.jpg",
+      "webp": "/home/z/my-project/public/images/stock/placement-03.webp",
+      "old_size": 79042,
+      "new_size": 45688,
+      "reduction_pct": 42.2
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/placement-04.jpg",
+      "webp": "/home/z/my-project/public/images/stock/placement-04.webp",
+      "old_size": 467964,
+      "new_size": 155438,
+      "reduction_pct": 66.8
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/skillslab-01.jpg",
+      "webp": "/home/z/my-project/public/images/stock/skillslab-01.webp",
+      "old_size": 287004,
+      "new_size": 74710,
+      "reduction_pct": 74.0
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/skillslab-02.jpg",
+      "webp": "/home/z/my-project/public/images/stock/skillslab-02.webp",
+      "old_size": 64357,
+      "new_size": 40978,
+      "reduction_pct": 36.3
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/skillslab-03.jpg",
+      "webp": "/home/z/my-project/public/images/stock/skillslab-03.webp",
+      "old_size": 62413,
+      "new_size": 21408,
+      "reduction_pct": 65.7
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/skillslab-04.jpg",
+      "webp": "/home/z/my-project/public/images/stock/skillslab-04.webp",
+      "old_size": 70491,
+      "new_size": 42548,
+      "reduction_pct": 39.6
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/skillslab-05.jpg",
+      "webp": "/home/z/my-project/public/images/stock/skillslab-05.webp",
+      "old_size": 89143,
+      "new_size": 56180,
+      "reduction_pct": 37.0
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/stethoscope-01.jpg",
+      "webp": "/home/z/my-project/public/images/stock/stethoscope-01.webp",
+      "old_size": 230810,
+      "new_size": 64906,
+      "reduction_pct": 71.9
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/stethoscope-02.jpg",
+      "webp": "/home/z/my-project/public/images/stock/stethoscope-02.webp",
+      "old_size": 94171,
+      "new_size": 53510,
+      "reduction_pct": 43.2
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/stethoscope-03.jpg",
+      "webp": "/home/z/my-project/public/images/stock/stethoscope-03.webp",
+      "old_size": 99346,
+      "new_size": 49732,
+      "reduction_pct": 49.9
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/stethoscope-04.jpg",
+      "webp": "/home/z/my-project/public/images/stock/stethoscope-04.webp",
+      "old_size": 116155,
+      "new_size": 56610,
+      "reduction_pct": 51.3
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/stethoscope-05.jpg",
+      "webp": "/home/z/my-project/public/images/stock/stethoscope-05.webp",
+      "old_size": 209114,
+      "new_size": 160872,
+      "reduction_pct": 23.1
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/study-01.jpg",
+      "webp": "/home/z/my-project/public/images/stock/study-01.webp",
+      "old_size": 154385,
+      "new_size": 109294,
+      "reduction_pct": 29.2
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/study-02.jpg",
+      "webp": "/home/z/my-project/public/images/stock/study-02.webp",
+      "old_size": 163472,
+      "new_size": 98178,
+      "reduction_pct": 39.9
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/study-03.jpg",
+      "webp": "/home/z/my-project/public/images/stock/study-03.webp",
+      "old_size": 167446,
+      "new_size": 96854,
+      "reduction_pct": 42.2
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/windhoek-01.jpg",
+      "webp": "/home/z/my-project/public/images/stock/windhoek-01.webp",
+      "old_size": 146677,
+      "new_size": 115914,
+      "reduction_pct": 21.0
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/windhoek-02.jpg",
+      "webp": "/home/z/my-project/public/images/stock/windhoek-02.webp",
+      "old_size": 216439,
+      "new_size": 192596,
+      "reduction_pct": 11.0
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/windhoek-03.jpg",
+      "webp": "/home/z/my-project/public/images/stock/windhoek-03.webp",
+      "old_size": 223272,
+      "new_size": 247774,
+      "reduction_pct": -11.0
+    },
+    {
+      "original": "/home/z/my-project/public/images/stock/windhoek-04.jpg",
+      "webp": "/home/z/my-project/public/images/stock/windhoek-04.webp",
+      "old_size": 202434,
+      "new_size": 131600,
+      "reduction_pct": 35.0
+    },
+    {
+      "original": "/home/z/my-project/public/images/logo-badge-white.png",
+      "webp": "/home/z/my-project/public/images/logo-badge-white.webp",
+      "old_size": 50400,
+      "new_size": 27378,
+      "reduction_pct": 45.7
+    },
+    {
+      "original": "/home/z/my-project/public/images/logo-circular-badge.png",
+      "webp": "/home/z/my-project/public/images/logo-circular-badge.webp",
+      "old_size": 163789,
+      "new_size": 45566,
+      "reduction_pct": 72.2
+    }
+  ],
+  "skipped": [
+    {
+      "file": "/home/z/my-project/public/images/crawled/logo-wordmark-small.png",
+      "reason": "too small (2478B)"
+    },
+    {
+      "file": "/home/z/my-project/public/images/logo-wordmark.png",
+      "reason": "too small (2478B)"
+    }
+  ],
+  "errors": [],
+  "summary": {
+    "total_converted": 101,
+    "total_before_mb": 30.07,
+    "total_after_mb": 9.43,
+    "total_saved_mb": 20.65,
+    "avg_reduction_pct": 68.7
+  }
+}

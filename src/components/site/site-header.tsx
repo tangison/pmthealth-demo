@@ -70,7 +70,7 @@ export function SiteHeader() {
                 aria-label={`${site.name} — home`}
               >
                 <Image
-                  src="/images/logo-circular-badge.png"
+                  src="/images/logo-circular-badge.webp"
                   alt="PMT Health Care Institution badge logo"
                   width={36}
                   height={36}
@@ -187,7 +187,7 @@ export function SiteHeader() {
               aria-label={`${site.name} — home`}
             >
               <Image
-                src="/images/logo-badge-white.png"
+                src="/images/logo-badge-white.webp"
                 alt="PMT Health Care Institution badge logo"
                 width={44}
                 height={44}

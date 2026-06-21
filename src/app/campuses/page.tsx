@@ -70,10 +70,10 @@ export default function CampusesPage() {
                 index={i + 1}
                 imageSrc={
                   c.slug === "windhoek"
-                    ? "/images/crawled/students-campus-building.jpg"
+                    ? "/images/crawled/students-campus-building.webp"
                     : c.slug === "rundu"
-                    ? "/images/crawled/students-practical-room.jpg"
-                    : "/images/crawled/students-classroom-02.jpg"
+                    ? "/images/crawled/students-practical-room.webp"
+                    : "/images/crawled/students-classroom-02.webp"
                 }
               />
             ))}
@@ -92,10 +92,10 @@ export default function CampusesPage() {
             </p>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
               {[
-                { img: "/images/crawled/students-campus-building.jpg", alt: "PMT students in front of the campus building.", caption: "Building" },
-                { img: "/images/crawled/students-practical-room.jpg", alt: "PMT students outside the Practical Room.", caption: "Practical Room" },
-                { img: "/images/crawled/students-classroom-02.jpg", alt: "PMT students in class.", caption: "Classroom" },
-                { img: "/images/crawled/students-ground-gathering.jpg", alt: "PMT students gathered on campus grounds.", caption: "Community" },
+                { img: "/images/crawled/students-campus-building.webp", alt: "PMT students in front of the campus building.", caption: "Building" },
+                { img: "/images/crawled/students-practical-room.webp", alt: "PMT students outside the Practical Room.", caption: "Practical Room" },
+                { img: "/images/crawled/students-classroom-02.webp", alt: "PMT students in class.", caption: "Classroom" },
+                { img: "/images/crawled/students-ground-gathering.webp", alt: "PMT students gathered on campus grounds.", caption: "Community" },
               ].map((item, i) => (
                 <figure
                   key={i}

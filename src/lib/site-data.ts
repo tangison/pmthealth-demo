@@ -21,81 +21,81 @@
 */
 export const imageLibrary = {
   // Brand logos
-  logoBadge: "/images/logo-circular-badge.png",
-  logoBadgeWhite: "/images/logo-badge-white.png",
-  logoHpcna: "/images/crawled/logo-hpcna.png",
-  logoNqa: "/images/crawled/logo-nqa.png",
-  logoIcare: "/images/crawled/logo-icare-mou.png",
+  logoBadge: "/images/logo-circular-badge.webp",
+  logoBadgeWhite: "/images/logo-badge-white.webp",
+  logoHpcna: "/images/crawled/logo-hpcna.webp",
+  logoNqa: "/images/crawled/logo-nqa.webp",
+  logoIcare: "/images/crawled/logo-icare-mou.webp",
 
   // Real PMT photos (crawled from 47.kesug.com)
   crawled: {
-    bannerClassroom: "/images/crawled/banner-students-classroom.jpg",
-    studentsClassroom01: "/images/crawled/students-classroom-01.jpg",
-    studentsClassroom02: "/images/crawled/students-classroom-02.jpg",
-    studentsSkillsLab: "/images/crawled/students-skills-lab.jpg",
-    studentsPracticalRoom: "/images/crawled/students-practical-room.jpg",
-    studentsCampusBuilding: "/images/crawled/students-campus-building.jpg",
-    studentsGroundGathering: "/images/crawled/students-ground-gathering.jpg",
-    studentsPastor: "/images/crawled/students-pastor.jpg",
-    founderPortrait: "/images/crawled/founder-rutendo-zvidza.jpg",
-    photoNursesDay: "/images/crawled/photo-nurses-day.jpg",
-    photoSafetyVests: "/images/crawled/photo-safety-vests.jpg",
+    bannerClassroom: "/images/crawled/banner-students-classroom.webp",
+    studentsClassroom01: "/images/crawled/students-classroom-01.webp",
+    studentsClassroom02: "/images/crawled/students-classroom-02.webp",
+    studentsSkillsLab: "/images/crawled/students-skills-lab.webp",
+    studentsPracticalRoom: "/images/crawled/students-practical-room.webp",
+    studentsCampusBuilding: "/images/crawled/students-campus-building.webp",
+    studentsGroundGathering: "/images/crawled/students-ground-gathering.webp",
+    studentsPastor: "/images/crawled/students-pastor.webp",
+    founderPortrait: "/images/crawled/founder-rutendo-zvidza.webp",
+    photoNursesDay: "/images/crawled/photo-nurses-day.webp",
+    photoSafetyVests: "/images/crawled/photo-safety-vests.webp",
   },
 
   // Stock photos (sourced via ZAI image-search from public web)
   stock: {
     // Classroom / theory learning
-    classroom01: "/images/stock/classroom-01.jpg",
-    classroom02: "/images/stock/classroom-02.jpg",
-    classroom03: "/images/stock/classroom-03.jpg",
-    classroom05: "/images/stock/classroom-05.jpg",
-    classroom06: "/images/stock/classroom-06.jpg",
+    classroom01: "/images/stock/classroom-01.webp",
+    classroom02: "/images/stock/classroom-02.webp",
+    classroom03: "/images/stock/classroom-03.webp",
+    classroom05: "/images/stock/classroom-05.webp",
+    classroom06: "/images/stock/classroom-06.webp",
 
     // Graduation ceremonies
-    graduation01: "/images/stock/graduation-01.jpg",
-    graduation02: "/images/stock/graduation-02.jpg",
-    graduation03: "/images/stock/graduation-03.jpg",
-    graduation04: "/images/stock/graduation-04.jpg",
-    graduation05: "/images/stock/graduation-05.jpg",
-    graduation06: "/images/stock/graduation-06.jpg",
+    graduation01: "/images/stock/graduation-01.webp",
+    graduation02: "/images/stock/graduation-02.webp",
+    graduation03: "/images/stock/graduation-03.webp",
+    graduation04: "/images/stock/graduation-04.webp",
+    graduation05: "/images/stock/graduation-05.webp",
+    graduation06: "/images/stock/graduation-06.webp",
 
     // Skills lab / practical training
-    skillslab01: "/images/stock/skillslab-01.jpg",
-    skillslab02: "/images/stock/skillslab-02.jpg",
-    skillslab03: "/images/stock/skillslab-03.jpg",
-    skillslab04: "/images/stock/skillslab-04.jpg",
-    skillslab05: "/images/stock/skillslab-05.jpg",
+    skillslab01: "/images/stock/skillslab-01.webp",
+    skillslab02: "/images/stock/skillslab-02.webp",
+    skillslab03: "/images/stock/skillslab-03.webp",
+    skillslab04: "/images/stock/skillslab-04.webp",
+    skillslab05: "/images/stock/skillslab-05.webp",
 
     // Clinical / patient care
-    clinical01: "/images/stock/clinical-01.jpg",
-    clinical02: "/images/stock/clinical-02.jpg",
-    clinical04: "/images/stock/clinical-04.jpg",
-    clinical05: "/images/stock/clinical-05.jpg",
+    clinical01: "/images/stock/clinical-01.webp",
+    clinical02: "/images/stock/clinical-02.webp",
+    clinical04: "/images/stock/clinical-04.webp",
+    clinical05: "/images/stock/clinical-05.webp",
 
     // Windhoek / Namibia cityscape (for campus context)
-    windhoek01: "/images/stock/windhoek-01.jpg",
-    windhoek02: "/images/stock/windhoek-02.jpg",
-    windhoek03: "/images/stock/windhoek-03.jpg",
-    windhoek04: "/images/stock/windhoek-04.jpg",
+    windhoek01: "/images/stock/windhoek-01.webp",
+    windhoek02: "/images/stock/windhoek-02.webp",
+    windhoek03: "/images/stock/windhoek-03.webp",
+    windhoek04: "/images/stock/windhoek-04.webp",
 
     // Oath / ceremony / candle lighting
-    oath01: "/images/stock/oath-01.jpg",
-    oath02: "/images/stock/oath-02.jpg",
-    oath04: "/images/stock/oath-04.jpg",
+    oath01: "/images/stock/oath-01.webp",
+    oath02: "/images/stock/oath-02.webp",
+    oath04: "/images/stock/oath-04.webp",
 
     // Community health outreach
-    community01: "/images/stock/community-01.jpg",
-    community02: "/images/stock/community-02.jpg",
-    community03: "/images/stock/community-03.jpg",
+    community01: "/images/stock/community-01.webp",
+    community02: "/images/stock/community-02.webp",
+    community03: "/images/stock/community-03.webp",
 
     // Clinical placement / hospital ward
-    placement01: "/images/stock/placement-01.jpg",
-    placement02: "/images/stock/placement-02.jpg",
-    placement03: "/images/stock/placement-03.jpg",
-    placement04: "/images/stock/placement-04.jpg",
+    placement01: "/images/stock/placement-01.webp",
+    placement02: "/images/stock/placement-02.webp",
+    placement03: "/images/stock/placement-03.webp",
+    placement04: "/images/stock/placement-04.webp",
 
     // Generated atmospheric background
-    abstractBgPurple: "/images/stock/abstract-bg-purple.png",
+    abstractBgPurple: "/images/stock/abstract-bg-purple.webp",
   },
 } as const;
 
@@ -240,7 +240,7 @@ export const news: NewsItem[] = [
     title: "March 2026 intake — applications open",
     summary:
       "PMT is accepting applications for the March 2026 intake of the Diploma in Enrolled Nursing and Midwifery Science. Both NSFAF-funded and non-funded applicants are welcome. Contact your nearest campus to confirm the entrance test window.",
-    imageSrc: "/images/crawled/students-classroom-01.jpg",
+    imageSrc: "/images/crawled/students-classroom-01.webp",
     imageAlt: "PMT students in a classroom session.",
   },
   {
@@ -251,7 +251,7 @@ export const news: NewsItem[] = [
     title: "Class of 2025 takes the oath",
     summary:
       "The day before graduation, students recited the nursing oath — the formal pledge that marks the transition from trainee to practitioner. The ceremony followed at Mecure Hotel, Windhoek, continuing the tradition set at the institute's first graduation of 50 nurses.",
-    imageSrc: "/images/crawled/students-ground-gathering.jpg",
+    imageSrc: "/images/crawled/students-ground-gathering.webp",
     imageAlt: "PMT students gathered together in blue uniforms.",
   },
   {
@@ -262,7 +262,7 @@ export const news: NewsItem[] = [
     title: "NSFAF funding accepted",
     summary:
       "Eligible students can apply through the Namibia Students Financial Assistance Fund. PMT accepts both NSFAF-sponsored and self-funded applicants — the admissions team at each campus can walk you through either path.",
-    imageSrc: "/images/crawled/students-classroom-02.jpg",
+    imageSrc: "/images/crawled/students-classroom-02.webp",
     imageAlt: "PMT students with open books in a classroom.",
   },
   {
@@ -273,7 +273,7 @@ export const news: NewsItem[] = [
     title: "Articulation MOU with I-Care Health Training Institute",
     summary:
       "PMT and I-Care Health Training Institute signed a memorandum of understanding on 22 August 2023 covering articulation and cross-crediting between the two institutions, opening additional pathways for nursing students.",
-    imageSrc: "/images/crawled/logo-icare-mou.png",
+    imageSrc: "/images/crawled/logo-icare-mou.webp",
     imageAlt: "I-Care Health Training Institute logo.",
   },
 ];
@@ -297,103 +297,136 @@ export const galleryImages: {
 }[] = [
   // Real PMT photos first
   {
-    src: "/images/crawled/banner-students-classroom.jpg",
+    src: "/images/crawled/banner-students-classroom.webp",
     alt: "Group of PMT students in blue uniforms preparing in a classroom.",
     caption: "In the classroom — Windhoek",
     span: "wide",
   },
   {
-    src: "/images/crawled/students-classroom-01.jpg",
+    src: "/images/crawled/students-classroom-01.webp",
     alt: "Classroom full of PMT students at desks, bright room with projector.",
     caption: "Theory class",
   },
   {
-    src: "/images/crawled/students-skills-lab.jpg",
+    src: "/images/crawled/students-skills-lab.webp",
     alt: "Four PMT students in teal uniforms, aprons, and masks in the skills lab.",
     caption: "Skills lab",
     span: "tall",
   },
   {
-    src: "/images/crawled/students-practical-room.jpg",
+    src: "/images/crawled/students-practical-room.webp",
     alt: "Group of PMT students in blue scrubs outside the Practical Room and Class 2.",
     caption: "Practical Room — campus",
     span: "wide",
   },
   {
-    src: "/images/crawled/students-campus-building.jpg",
+    src: "/images/crawled/students-campus-building.webp",
     alt: "Group of PMT students in blue uniforms in front of the PMT building.",
     caption: "PMT campus building",
   },
   {
-    src: "/images/crawled/students-classroom-02.jpg",
+    src: "/images/crawled/students-classroom-02.webp",
     alt: "Group of PMT students in a classroom, smiling at camera, books open.",
     caption: "Class in session",
   },
   {
-    src: "/images/crawled/students-ground-gathering.jpg",
+    src: "/images/crawled/students-ground-gathering.webp",
     alt: "Group of PMT students in blue uniforms gathered together on the ground.",
     caption: "Campus life",
     span: "wide",
   },
   {
-    src: "/images/crawled/photo-nurses-day.jpg",
+    src: "/images/crawled/photo-nurses-day.webp",
     alt: "Two PMT nurses holding a Nurses Day frame in front of a Namibia Institute of Pathology backdrop.",
     caption: "Nurses Day",
   },
   {
-    src: "/images/crawled/photo-safety-vests.jpg",
+    src: "/images/crawled/photo-safety-vests.webp",
     alt: "PMT students in safety vests and blue pants holding blue hard hats in front of a white building.",
     caption: "OHS training",
   },
   {
-    src: "/images/crawled/students-pastor.jpg",
+    src: "/images/crawled/students-pastor.webp",
     alt: "A woman in red and a man in red sitting side by side, smiling — campus ceremony.",
     caption: "Ceremony",
     span: "wide",
   },
   // Stock photos to fill out the gallery
   {
-    src: "/images/stock/graduation-01.jpg",
+    src: "/images/stock/graduation-01.webp",
     alt: "Graduate in academic regalia smiling at a graduation ceremony.",
     caption: "Graduation day",
   },
   {
-    src: "/images/stock/clinical-01.jpg",
+    src: "/images/stock/clinical-01.webp",
     alt: "Nurse attending to a patient in a care setting.",
     caption: "Patient care",
     span: "tall",
   },
   {
-    src: "/images/stock/skillslab-01.jpg",
+    src: "/images/stock/skillslab-01.webp",
     alt: "Nursing skills lab with training manikin and medical equipment.",
     caption: "Training equipment",
   },
   {
-    src: "/images/stock/oath-02.jpg",
+    src: "/images/stock/oath-02.webp",
     alt: "Nursing oath ceremony with candle lighting.",
     caption: "The oath",
     span: "wide",
   },
   {
-    src: "/images/stock/community-01.jpg",
+    src: "/images/stock/community-01.webp",
     alt: "Community health outreach in an African setting.",
     caption: "Community outreach",
   },
   {
-    src: "/images/stock/placement-01.jpg",
+    src: "/images/stock/placement-01.webp",
     alt: "Nursing student in clinical placement in a hospital ward.",
     caption: "Clinical placement",
   },
   {
-    src: "/images/stock/classroom-05.jpg",
+    src: "/images/stock/classroom-05.webp",
     alt: "Nursing students studying together with books and notebooks.",
     caption: "Collaborative study",
     span: "wide",
   },
   {
-    src: "/images/stock/graduation-03.jpg",
+    src: "/images/stock/graduation-03.webp",
     alt: "Graduation ceremony with multiple graduates in academic dress.",
     caption: "Class of graduates",
+  },
+  // New batch — more clinical + career imagery
+  {
+    src: "/images/stock/stethoscope-02.webp",
+    alt: "Nursing student holding a stethoscope.",
+    caption: "The tools of the trade",
+  },
+  {
+    src: "/images/stock/midwife-03.webp",
+    alt: "Midwife caring for newborn baby.",
+    caption: "Midwifery care",
+    span: "tall",
+  },
+  {
+    src: "/images/stock/hospital-03.webp",
+    alt: "Modern hospital ward interior.",
+    caption: "Hospital ward",
+  },
+  {
+    src: "/images/stock/bloodpressure-02.webp",
+    alt: "Nurse checking a patient's blood pressure.",
+    caption: "Patient observations",
+  },
+  {
+    src: "/images/stock/corridor-02.webp",
+    alt: "Nurse walking through a hospital corridor.",
+    caption: "On the ward",
+    span: "wide",
+  },
+  {
+    src: "/images/stock/diploma-02.webp",
+    alt: "Graduation diploma and cap close-up.",
+    caption: "The finish line",
   },
 ];
 

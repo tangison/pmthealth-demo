@@ -118,25 +118,25 @@ export default function ProgrammesPage() {
                   {
                     title: "Theory",
                     body: "Classroom-based learning covering the foundational sciences — anatomy, physiology, microbiology — alongside nursing theory, midwifery, pharmacology, and professional ethics.",
-                    img: "/images/stock/classroom-05.jpg",
+                    img: "/images/stock/classroom-05.webp",
                     alt: "Nursing students studying together with books and notebooks.",
                   },
                   {
                     title: "Skills lab",
                     body: "Practical skills are rehearsed in a controlled training environment before any clinical contact — from basic observations and wound care to assisted delivery.",
-                    img: "/images/stock/skillslab-01.jpg",
+                    img: "/images/stock/skillslab-01.webp",
                     alt: "Nursing skills lab with training manikin and medical equipment.",
                   },
                   {
                     title: "Clinical placement",
                     body: "Students rotate through clinical settings under supervision, building real-world competence in patient care, midwifery, and community health practice.",
-                    img: "/images/stock/placement-01.jpg",
+                    img: "/images/stock/placement-01.webp",
                     alt: "Nursing student in clinical placement in a hospital ward.",
                   },
                   {
                     title: "The oath",
                     body: "The night before graduation, students recite the formal nursing oath — the moment training becomes vocation. This is the institutional signature: every PMT graduate has taken it.",
-                    img: "/images/stock/oath-02.jpg",
+                    img: "/images/stock/oath-02.webp",
                     alt: "Nursing oath ceremony with candle lighting.",
                   },
                 ].map((s) => (
@@ -169,7 +169,7 @@ export default function ProgrammesPage() {
                 <div className="img-zoom rounded-3xl overflow-hidden bg-pmt-purple-900 aspect-[4/5]">
                   { }
                   <img
-                    src="/images/crawled/students-skills-lab.jpg"
+                    src="/images/crawled/students-skills-lab.webp"
                     alt="Four PMT students in teal uniforms, aprons, and masks in the skills lab."
                     className="w-full h-full object-cover"
                     loading="lazy"
@@ -180,6 +180,45 @@ export default function ProgrammesPage() {
                 </figcaption>
               </figure>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─────────── CAREER OUTCOMES — VISUAL GRID ─────────── */}
+      <section
+        aria-labelledby="careers-title"
+        className="border-b border-pmt-purple-900/10 bg-pmt-cream"
+      >
+        <div className="mx-auto max-w-8xl px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
+          <SectionHeading
+            eyebrow="Where you'll work"
+            title="Career outcomes after PMT."
+            lede="Graduates of the Diploma in Enrolled Nursing and Midwifery Science are equipped to serve across Namibia's health system — in hospitals, clinics, community health, and midwifery care."
+            className="mb-12"
+          />
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4" data-reveal>
+            {[
+              { img: "/images/stock/hospital-02.webp", alt: "Hospital ward interior.", label: "Hospital wards" },
+              { img: "/images/stock/midwife-02.webp", alt: "Midwife with newborn.", label: "Midwifery care" },
+              { img: "/images/stock/bloodpressure-01.webp", alt: "Nurse checking patient blood pressure.", label: "Patient care" },
+              { img: "/images/stock/community-02.webp", alt: "Community health outreach.", label: "Community health" },
+            ].map((card, i) => (
+              <figure
+                key={i}
+                className="img-zoom relative aspect-[4/3] rounded-2xl overflow-hidden bg-pmt-purple-900 group card-physics"
+              >
+                { }
+                <img
+                  src={card.img}
+                  alt={card.alt}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+                <figcaption className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-pmt-purple-900/95 to-transparent">
+                  <p className="font-display text-lg text-pmt-cream leading-tight">{card.label}</p>
+                </figcaption>
+              </figure>
+            ))}
           </div>
         </div>
       </section>

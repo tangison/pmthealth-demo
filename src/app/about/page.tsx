@@ -53,7 +53,7 @@ export default function AboutPage() {
               <div className="img-zoom rounded-3xl overflow-hidden bg-pmt-purple-900 aspect-[4/3] mb-5">
                 { }
                 <img
-                  src="/images/crawled/students-classroom-01.jpg"
+                  src="/images/crawled/students-classroom-01.webp"
                   alt="PMT students in a bright classroom with projector."
                   className="w-full h-full object-cover"
                   loading="lazy"

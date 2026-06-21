@@ -34,7 +34,7 @@ export function SiteFooter() {
           {/* Large circular badge logo — the anchor visual (white/inverted for purple bg) */}
           <div className="md:col-span-4 lg:col-span-3 flex flex-col items-center md:items-start">
             <Image
-              src="/images/logo-badge-white.png"
+              src="/images/logo-badge-white.webp"
               alt="PMT Health Care Institution circular badge logo"
               width={180}
               height={180}

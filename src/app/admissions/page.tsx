@@ -39,6 +39,15 @@ export default function AdmissionsPage() {
               </h1>
             </div>
             <div className="lg:col-span-4" data-reveal>
+              <div className="img-zoom rounded-3xl overflow-hidden bg-pmt-purple-900 aspect-[4/3] mb-5">
+                { }
+                <img
+                  src="/images/stock/study-01.webp"
+                  alt="Medical textbooks and stethoscope on a study desk."
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
               <p className="text-base text-pmt-ink-soft leading-relaxed">
                 PMT accepts both NSFAF-funded and self-funded applicants into
                 the Diploma in Enrolled Nursing and Midwifery Science. The
@@ -134,7 +143,7 @@ export default function AdmissionsPage() {
             <div className="img-zoom aspect-[4/3] rounded-2xl overflow-hidden bg-pmt-purple-900 sm:col-span-2">
               { }
               <img
-                src="/images/crawled/students-practical-room.jpg"
+                src="/images/crawled/students-practical-room.webp"
                 alt="PMT students in blue scrubs outside the Practical Room."
                 className="w-full h-full object-cover"
                 loading="lazy"
@@ -143,7 +152,7 @@ export default function AdmissionsPage() {
             <div className="img-zoom aspect-[4/3] rounded-2xl overflow-hidden bg-pmt-purple-900">
               { }
               <img
-                src="/images/crawled/photo-nurses-day.jpg"
+                src="/images/crawled/photo-nurses-day.webp"
                 alt="Two PMT nurses holding a Nurses Day frame."
                 className="w-full h-full object-cover"
                 loading="lazy"

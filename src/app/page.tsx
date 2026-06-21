@@ -27,7 +27,7 @@ export default function HomePage() {
             Photo extends full-bleed to the top of the viewport, behind the floating nav. */}
         <div className="absolute inset-0 -z-10" aria-hidden="true">
           <img
-            src="/images/crawled/banner-students-classroom.jpg"
+            src="/images/crawled/banner-students-classroom.webp"
             alt=""
             className="w-full h-full object-cover"
             loading="eager"
@@ -268,26 +268,26 @@ export default function HomePage() {
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4" data-reveal>
             {[
               {
-                img: "/images/crawled/students-classroom-01.jpg",
-                alt: "PMT students learning in a bright classroom.",
+                img: "/images/stock/stethoscope-01.webp",
+                alt: "Nursing student with stethoscope in professional setting.",
                 label: "Theory",
                 caption: "Foundational sciences, nursing theory, ethics",
               },
               {
-                img: "/images/crawled/students-skills-lab.jpg",
-                alt: "PMT students in the skills lab.",
+                img: "/images/stock/hospital-01.webp",
+                alt: "Hospital interior with modern medical equipment.",
                 label: "Skills lab",
                 caption: "Hands-on practice before clinical contact",
               },
               {
-                img: "/images/stock/clinical-01.jpg",
-                alt: "Nurse attending to a patient.",
+                img: "/images/stock/midwife-01.webp",
+                alt: "Midwife caring for newborn baby.",
                 label: "Clinical placement",
                 caption: "Real wards, real patients, real supervision",
               },
               {
-                img: "/images/stock/oath-02.jpg",
-                alt: "Nursing oath ceremony.",
+                img: "/images/stock/diploma-01.webp",
+                alt: "Graduation cap and diploma ceremony close-up.",
                 label: "The oath",
                 caption: "The pledge that turns training into vocation",
               },
@@ -335,10 +335,10 @@ export default function HomePage() {
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4" data-reveal>
             {[
-              { img: "/images/crawled/students-ground-gathering.jpg", alt: "PMT students gathered together on campus.", caption: "Campus community" },
-              { img: "/images/crawled/photo-nurses-day.jpg", alt: "PMT nurses celebrating Nurses Day.", caption: "Nurses Day" },
-              { img: "/images/stock/graduation-01.jpg", alt: "Graduate smiling at graduation ceremony.", caption: "Graduation" },
-              { img: "/images/stock/community-01.jpg", alt: "Community health outreach.", caption: "Outreach" },
+              { img: "/images/crawled/students-ground-gathering.webp", alt: "PMT students gathered together on campus.", caption: "Campus community" },
+              { img: "/images/crawled/photo-nurses-day.webp", alt: "PMT nurses celebrating Nurses Day.", caption: "Nurses Day" },
+              { img: "/images/stock/graduation-01.webp", alt: "Graduate smiling at graduation ceremony.", caption: "Graduation" },
+              { img: "/images/stock/community-01.webp", alt: "Community health outreach.", caption: "Outreach" },
             ].map((item, i) => (
               <figure
                 key={i}
@@ -375,7 +375,7 @@ export default function HomePage() {
                 <div className="img-zoom rounded-3xl overflow-hidden bg-pmt-purple-900 aspect-[4/5] max-w-sm">
                   { }
                   <img
-                    src="/images/crawled/founder-rutendo-zvidza.jpg"
+                    src="/images/crawled/founder-rutendo-zvidza.webp"
                     alt={`${site.director}, founder of PMT Health Care Institution, with a patient.`}
                     className="w-full h-full object-cover"
                     loading="lazy"
@@ -454,7 +454,7 @@ export default function HomePage() {
                 index={i + 1}
                 imageSrc={
                   c.slug === "windhoek"
-                    ? "/images/crawled/students-campus-building.jpg"
+                    ? "/images/crawled/students-campus-building.webp"
                     : undefined
                 }
               />

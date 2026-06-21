@@ -302,5 +302,170 @@
     "size_bytes": 467964,
     "width": "2560px",
     "height": "1362px"
+  },
+  {
+    "filename": "hospital-01.jpg",
+    "category": "hospital",
+    "size": 197636
+  },
+  {
+    "filename": "hospital-02.jpg",
+    "category": "hospital",
+    "size": 96656
+  },
+  {
+    "filename": "hospital-03.jpg",
+    "category": "hospital",
+    "size": 107982
+  },
+  {
+    "filename": "hospital-04.jpg",
+    "category": "hospital",
+    "size": 107179
+  },
+  {
+    "filename": "stethoscope-01.jpg",
+    "category": "stethoscope",
+    "size": 230810
+  },
+  {
+    "filename": "stethoscope-02.jpg",
+    "category": "stethoscope",
+    "size": 94171
+  },
+  {
+    "filename": "stethoscope-03.jpg",
+    "category": "stethoscope",
+    "size": 99346
+  },
+  {
+    "filename": "stethoscope-04.jpg",
+    "category": "stethoscope",
+    "size": 116155
+  },
+  {
+    "filename": "stethoscope-05.jpg",
+    "category": "stethoscope",
+    "size": 209114
+  },
+  {
+    "filename": "midwife-01.jpg",
+    "category": "midwife",
+    "size": 332251
+  },
+  {
+    "filename": "midwife-02.jpg",
+    "category": "midwife",
+    "size": 2823657
+  },
+  {
+    "filename": "midwife-03.jpg",
+    "category": "midwife",
+    "size": 691143
+  },
+  {
+    "filename": "midwife-04.jpg",
+    "category": "midwife",
+    "size": 200832
+  },
+  {
+    "filename": "midwife-05.jpg",
+    "category": "midwife",
+    "size": 3864730
+  },
+  {
+    "filename": "bloodpressure-01.jpg",
+    "category": "bloodpressure",
+    "size": 118744
+  },
+  {
+    "filename": "bloodpressure-02.jpg",
+    "category": "bloodpressure",
+    "size": 150564
+  },
+  {
+    "filename": "bloodpressure-03.jpg",
+    "category": "bloodpressure",
+    "size": 129207
+  },
+  {
+    "filename": "bloodpressure-04.jpg",
+    "category": "bloodpressure",
+    "size": 141121
+  },
+  {
+    "filename": "group-01.jpg",
+    "category": "group",
+    "size": 96220
+  },
+  {
+    "filename": "group-02.jpg",
+    "category": "group",
+    "size": 118449
+  },
+  {
+    "filename": "group-03.jpg",
+    "category": "group",
+    "size": 100468
+  },
+  {
+    "filename": "group-04.jpg",
+    "category": "group",
+    "size": 125362
+  },
+  {
+    "filename": "diploma-01.jpg",
+    "category": "diploma",
+    "size": 150660
+  },
+  {
+    "filename": "diploma-02.jpg",
+    "category": "diploma",
+    "size": 84824
+  },
+  {
+    "filename": "diploma-03.jpg",
+    "category": "diploma",
+    "size": 92439
+  },
+  {
+    "filename": "diploma-04.jpg",
+    "category": "diploma",
+    "size": 51125
+  },
+  {
+    "filename": "study-01.jpg",
+    "category": "study",
+    "size": 154385
+  },
+  {
+    "filename": "study-02.jpg",
+    "category": "study",
+    "size": 163472
+  },
+  {
+    "filename": "study-03.jpg",
+    "category": "study",
+    "size": 167446
+  },
+  {
+    "filename": "corridor-01.jpg",
+    "category": "corridor",
+    "size": 125007
+  },
+  {
+    "filename": "corridor-02.jpg",
+    "category": "corridor",
+    "size": 54497
+  },
+  {
+    "filename": "corridor-03.jpg",
+    "category": "corridor",
+    "size": 94697
+  },
+  {
+    "filename": "corridor-04.jpg",
+    "category": "corridor",
+    "size": 187341
   }
 ]

@@ -33,6 +33,15 @@ export default function ContactPage() {
               </h1>
             </div>
             <div className="lg:col-span-4" data-reveal>
+              <div className="img-zoom rounded-3xl overflow-hidden bg-pmt-purple-900 aspect-[4/3] mb-5">
+                { }
+                <img
+                  src="/images/stock/corridor-01.webp"
+                  alt="Nurse walking through a hospital corridor."
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
               <p className="text-base text-pmt-ink-soft leading-relaxed">
                 The fastest way to reach PMT is by phone — admissions,
                 accreditation questions, and intake details are all handled

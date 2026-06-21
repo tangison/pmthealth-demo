@@ -48,12 +48,12 @@ export default function AccreditationPage() {
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 items-center">
               {[
-                { src: "/images/crawled/logo-hpcna.png", alt: "HPCNA — Health Professions Council of Namibia", name: "HPCNA" },
-                { src: "/images/crawled/logo-nqa.png", alt: "NQA — Namibia Qualifications Authority", name: "NQA" },
-                { src: "/images/crawled/logo-icare-mou.png", alt: "I-Care Health Training Institute — articulation partner", name: "I-Care" },
-                { src: "/images/crawled/logo-nta.png", alt: "NTA — Namibia Training Authority", name: "NTA" },
-                { src: "/images/crawled/logo-nip.png", alt: "NIP — Namibia Institute of Pathology", name: "NIP" },
-                { src: "/images/crawled/logo-namibia-medical-care.png", alt: "Namibia Medical Care", name: "NMC" },
+                { src: "/images/crawled/logo-hpcna.webp", alt: "HPCNA — Health Professions Council of Namibia", name: "HPCNA" },
+                { src: "/images/crawled/logo-nqa.webp", alt: "NQA — Namibia Qualifications Authority", name: "NQA" },
+                { src: "/images/crawled/logo-icare-mou.webp", alt: "I-Care Health Training Institute — articulation partner", name: "I-Care" },
+                { src: "/images/crawled/logo-nta.webp", alt: "NTA — Namibia Training Authority", name: "NTA" },
+                { src: "/images/crawled/logo-nip.webp", alt: "NIP — Namibia Institute of Pathology", name: "NIP" },
+                { src: "/images/crawled/logo-namibia-medical-care.webp", alt: "Namibia Medical Care", name: "NMC" },
               ].map((logo) => (
                 <div
                   key={logo.name}
@@ -141,7 +141,7 @@ export default function AccreditationPage() {
               <div className="bg-white border-2 border-pmt-purple-900 p-7 sm:p-9 rounded-3xl card-physics">
                 <div className="flex items-center justify-between gap-3 mb-6 pb-6 border-b border-pmt-purple-900/10">
                   <img
-                    src="/images/crawled/logo-hpcna.png"
+                    src="/images/crawled/logo-hpcna.webp"
                     alt="HPCNA logo"
                     className="h-12 w-auto object-contain"
                     loading="lazy"
@@ -223,7 +223,7 @@ export default function AccreditationPage() {
               <div className="bg-pmt-purple-900 text-pmt-cream p-7 sm:p-9 rounded-3xl border border-pmt-purple-800 card-physics">
                 <div className="flex items-center justify-between gap-3 mb-6 pb-6 border-b border-pmt-cream/15">
                   <img
-                    src="/images/crawled/logo-nqa.png"
+                    src="/images/crawled/logo-nqa.webp"
                     alt="NQA logo"
                     className="h-16 w-auto object-contain bg-pmt-cream rounded-lg p-1.5"
                     loading="lazy"
