@@ -84,6 +84,39 @@ export default function CampusesPage() {
             Ongwediva, please call the campus directly — staff will share
             directions and visiting hours.
           </p>
+
+          {/* Campus life preview strip */}
+          <div className="mt-12" data-reveal>
+            <p className="font-mono text-xs uppercase tracking-widest text-pmt-gold mb-4">
+              Campus life — across all three locations
+            </p>
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+              {[
+                { img: "/images/crawled/students-campus-building.jpg", alt: "PMT students in front of the campus building.", caption: "Building" },
+                { img: "/images/crawled/students-practical-room.jpg", alt: "PMT students outside the Practical Room.", caption: "Practical Room" },
+                { img: "/images/crawled/students-classroom-02.jpg", alt: "PMT students in class.", caption: "Classroom" },
+                { img: "/images/crawled/students-ground-gathering.jpg", alt: "PMT students gathered on campus grounds.", caption: "Community" },
+              ].map((item, i) => (
+                <figure
+                  key={i}
+                  className="img-zoom relative aspect-[4/3] rounded-2xl overflow-hidden bg-pmt-purple-900"
+                >
+                  { }
+                  <img
+                    src={item.img}
+                    alt={item.alt}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <figcaption className="absolute bottom-0 left-0 right-0 p-2.5 bg-gradient-to-t from-pmt-purple-900/90 to-transparent">
+                    <span className="font-mono text-[10px] uppercase tracking-widest text-pmt-cream/90">
+                      {item.caption}
+                    </span>
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 

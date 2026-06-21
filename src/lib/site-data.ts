@@ -7,6 +7,98 @@
   public Facebook page and audit notes — do not invent additional facts.
 */
 
+/*
+  Image library — central registry of all photos used across the site.
+  Mix of:
+  - /images/crawled/* — real photos retrieved from the institution's existing
+    public site (47.kesug.com), documented in /public/images/crawled/manifest.md
+  - /images/stock/* — relevant stock photos sourced via ZAI image-search
+    from public web (Unsplash etc), documented in /public/images/stock/manifest.json
+  - /images/logo-* — brand logo files (circular badge, white variant, etc)
+
+  Pages should reference images from this library so we can swap any asset
+  without touching multiple files.
+*/
+export const imageLibrary = {
+  // Brand logos
+  logoBadge: "/images/logo-circular-badge.png",
+  logoBadgeWhite: "/images/logo-badge-white.png",
+  logoHpcna: "/images/crawled/logo-hpcna.png",
+  logoNqa: "/images/crawled/logo-nqa.png",
+  logoIcare: "/images/crawled/logo-icare-mou.png",
+
+  // Real PMT photos (crawled from 47.kesug.com)
+  crawled: {
+    bannerClassroom: "/images/crawled/banner-students-classroom.jpg",
+    studentsClassroom01: "/images/crawled/students-classroom-01.jpg",
+    studentsClassroom02: "/images/crawled/students-classroom-02.jpg",
+    studentsSkillsLab: "/images/crawled/students-skills-lab.jpg",
+    studentsPracticalRoom: "/images/crawled/students-practical-room.jpg",
+    studentsCampusBuilding: "/images/crawled/students-campus-building.jpg",
+    studentsGroundGathering: "/images/crawled/students-ground-gathering.jpg",
+    studentsPastor: "/images/crawled/students-pastor.jpg",
+    founderPortrait: "/images/crawled/founder-rutendo-zvidza.jpg",
+    photoNursesDay: "/images/crawled/photo-nurses-day.jpg",
+    photoSafetyVests: "/images/crawled/photo-safety-vests.jpg",
+  },
+
+  // Stock photos (sourced via ZAI image-search from public web)
+  stock: {
+    // Classroom / theory learning
+    classroom01: "/images/stock/classroom-01.jpg",
+    classroom02: "/images/stock/classroom-02.jpg",
+    classroom03: "/images/stock/classroom-03.jpg",
+    classroom05: "/images/stock/classroom-05.jpg",
+    classroom06: "/images/stock/classroom-06.jpg",
+
+    // Graduation ceremonies
+    graduation01: "/images/stock/graduation-01.jpg",
+    graduation02: "/images/stock/graduation-02.jpg",
+    graduation03: "/images/stock/graduation-03.jpg",
+    graduation04: "/images/stock/graduation-04.jpg",
+    graduation05: "/images/stock/graduation-05.jpg",
+    graduation06: "/images/stock/graduation-06.jpg",
+
+    // Skills lab / practical training
+    skillslab01: "/images/stock/skillslab-01.jpg",
+    skillslab02: "/images/stock/skillslab-02.jpg",
+    skillslab03: "/images/stock/skillslab-03.jpg",
+    skillslab04: "/images/stock/skillslab-04.jpg",
+    skillslab05: "/images/stock/skillslab-05.jpg",
+
+    // Clinical / patient care
+    clinical01: "/images/stock/clinical-01.jpg",
+    clinical02: "/images/stock/clinical-02.jpg",
+    clinical04: "/images/stock/clinical-04.jpg",
+    clinical05: "/images/stock/clinical-05.jpg",
+
+    // Windhoek / Namibia cityscape (for campus context)
+    windhoek01: "/images/stock/windhoek-01.jpg",
+    windhoek02: "/images/stock/windhoek-02.jpg",
+    windhoek03: "/images/stock/windhoek-03.jpg",
+    windhoek04: "/images/stock/windhoek-04.jpg",
+
+    // Oath / ceremony / candle lighting
+    oath01: "/images/stock/oath-01.jpg",
+    oath02: "/images/stock/oath-02.jpg",
+    oath04: "/images/stock/oath-04.jpg",
+
+    // Community health outreach
+    community01: "/images/stock/community-01.jpg",
+    community02: "/images/stock/community-02.jpg",
+    community03: "/images/stock/community-03.jpg",
+
+    // Clinical placement / hospital ward
+    placement01: "/images/stock/placement-01.jpg",
+    placement02: "/images/stock/placement-02.jpg",
+    placement03: "/images/stock/placement-03.jpg",
+    placement04: "/images/stock/placement-04.jpg",
+
+    // Generated atmospheric background
+    abstractBgPurple: "/images/stock/abstract-bg-purple.png",
+  },
+} as const;
+
 export const site = {
   name: "PMT Health Care Institution",
   shortName: "PMT",
@@ -203,6 +295,7 @@ export const galleryImages: {
   caption: string;
   span?: "wide" | "tall" | "default";
 }[] = [
+  // Real PMT photos first
   {
     src: "/images/crawled/banner-students-classroom.jpg",
     alt: "Group of PMT students in blue uniforms preparing in a classroom.",
@@ -257,6 +350,50 @@ export const galleryImages: {
     alt: "A woman in red and a man in red sitting side by side, smiling — campus ceremony.",
     caption: "Ceremony",
     span: "wide",
+  },
+  // Stock photos to fill out the gallery
+  {
+    src: "/images/stock/graduation-01.jpg",
+    alt: "Graduate in academic regalia smiling at a graduation ceremony.",
+    caption: "Graduation day",
+  },
+  {
+    src: "/images/stock/clinical-01.jpg",
+    alt: "Nurse attending to a patient in a care setting.",
+    caption: "Patient care",
+    span: "tall",
+  },
+  {
+    src: "/images/stock/skillslab-01.jpg",
+    alt: "Nursing skills lab with training manikin and medical equipment.",
+    caption: "Training equipment",
+  },
+  {
+    src: "/images/stock/oath-02.jpg",
+    alt: "Nursing oath ceremony with candle lighting.",
+    caption: "The oath",
+    span: "wide",
+  },
+  {
+    src: "/images/stock/community-01.jpg",
+    alt: "Community health outreach in an African setting.",
+    caption: "Community outreach",
+  },
+  {
+    src: "/images/stock/placement-01.jpg",
+    alt: "Nursing student in clinical placement in a hospital ward.",
+    caption: "Clinical placement",
+  },
+  {
+    src: "/images/stock/classroom-05.jpg",
+    alt: "Nursing students studying together with books and notebooks.",
+    caption: "Collaborative study",
+    span: "wide",
+  },
+  {
+    src: "/images/stock/graduation-03.jpg",
+    alt: "Graduation ceremony with multiple graduates in academic dress.",
+    caption: "Class of graduates",
   },
 ];
 

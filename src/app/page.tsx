@@ -252,6 +252,116 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ─────────────── WHY PMT — VISUAL GRID ─────────────── */}
+      <section
+        aria-labelledby="why-pmt-title"
+        className="border-b border-pmt-purple-900/10 bg-pmt-cream"
+      >
+        <div className="mx-auto max-w-8xl px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
+          <SectionHeading
+            eyebrow="Why PMT"
+            title="Training that prepares you for the real ward."
+            lede="From the classroom to the skills lab to the clinical placement — every PMT student walks the same path. These are the moments that shape a nurse."
+            className="mb-12"
+          />
+
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4" data-reveal>
+            {[
+              {
+                img: "/images/crawled/students-classroom-01.jpg",
+                alt: "PMT students learning in a bright classroom.",
+                label: "Theory",
+                caption: "Foundational sciences, nursing theory, ethics",
+              },
+              {
+                img: "/images/crawled/students-skills-lab.jpg",
+                alt: "PMT students in the skills lab.",
+                label: "Skills lab",
+                caption: "Hands-on practice before clinical contact",
+              },
+              {
+                img: "/images/stock/clinical-01.jpg",
+                alt: "Nurse attending to a patient.",
+                label: "Clinical placement",
+                caption: "Real wards, real patients, real supervision",
+              },
+              {
+                img: "/images/stock/oath-02.jpg",
+                alt: "Nursing oath ceremony.",
+                label: "The oath",
+                caption: "The pledge that turns training into vocation",
+              },
+            ].map((card, i) => (
+              <article
+                key={card.label}
+                className="bg-white border border-pmt-purple-900/10 rounded-2xl overflow-hidden card-physics"
+                style={{ transitionDelay: `${i * 50}ms` }}
+              >
+                <div className="img-zoom aspect-[4/5] bg-pmt-purple-900 overflow-hidden">
+                  { }
+                  <img
+                    src={card.img}
+                    alt={card.alt}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="p-5">
+                  <p className="font-mono text-[10px] uppercase tracking-widest text-pmt-gold mb-1">
+                    {card.label}
+                  </p>
+                  <p className="text-sm text-pmt-ink-soft leading-relaxed">
+                    {card.caption}
+                  </p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─────────────── CAMPUS LIFE STRIP ─────────────── */}
+      <section
+        aria-labelledby="campus-life-title"
+        className="border-b border-pmt-purple-900/10 bg-pmt-cream-2/30"
+      >
+        <div className="mx-auto max-w-8xl px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
+          <SectionHeading
+            eyebrow="Campus life"
+            title="More than a qualification — a community."
+            lede="Life at PMT happens in classrooms, in the skills lab, in clinical rotation, and in the moments between. Here is what students walk into when they join."
+            className="mb-12"
+          />
+
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4" data-reveal>
+            {[
+              { img: "/images/crawled/students-ground-gathering.jpg", alt: "PMT students gathered together on campus.", caption: "Campus community" },
+              { img: "/images/crawled/photo-nurses-day.jpg", alt: "PMT nurses celebrating Nurses Day.", caption: "Nurses Day" },
+              { img: "/images/stock/graduation-01.jpg", alt: "Graduate smiling at graduation ceremony.", caption: "Graduation" },
+              { img: "/images/stock/community-01.jpg", alt: "Community health outreach.", caption: "Outreach" },
+            ].map((item, i) => (
+              <figure
+                key={i}
+                className="img-zoom relative aspect-square rounded-2xl overflow-hidden bg-pmt-purple-900 group"
+              >
+                { }
+                <img
+                  src={item.img}
+                  alt={item.alt}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+                <figcaption className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-pmt-purple-900/90 to-transparent">
+                  <span className="font-mono text-[10px] uppercase tracking-widest text-pmt-cream/90">
+                    {item.caption}
+                  </span>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ─────────────────────── FOUNDER TEASER ─────────────────────── */}
       <section
         aria-labelledby="founder-title"

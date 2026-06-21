@@ -1,0 +1,306 @@
+[
+  {
+    "filename": "classroom-01.jpg",
+    "category": "classroom",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/069358517448.jpg",
+    "size_bytes": 160625,
+    "width": "1300px",
+    "height": "959px"
+  },
+  {
+    "filename": "classroom-02.jpg",
+    "category": "classroom",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/ee9f8b56c3b8.jpg",
+    "size_bytes": 228886,
+    "width": "2048px",
+    "height": "1346px"
+  },
+  {
+    "filename": "classroom-03.jpg",
+    "category": "classroom",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/469136e6b6e5.jpg",
+    "size_bytes": 246332,
+    "width": "1800px",
+    "height": "1200px"
+  },
+  {
+    "filename": "classroom-04.png",
+    "category": "classroom",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/6244b91ca77c.png",
+    "size_bytes": 2092507,
+    "width": "1800px",
+    "height": "1000px"
+  },
+  {
+    "filename": "classroom-05.jpg",
+    "category": "classroom",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/f67bd9075941.jpg",
+    "size_bytes": 376910,
+    "width": "2560px",
+    "height": "1707px"
+  },
+  {
+    "filename": "classroom-06.jpg",
+    "category": "classroom",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/e0d297b11fab.jpeg",
+    "size_bytes": 549581,
+    "width": "1920px",
+    "height": "2560px"
+  },
+  {
+    "filename": "graduation-01.jpg",
+    "category": "graduation",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/cd384d9c2707.jpeg",
+    "size_bytes": 93424,
+    "width": "768px",
+    "height": "1024px"
+  },
+  {
+    "filename": "graduation-02.jpg",
+    "category": "graduation",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/b48e68ed31fd.jpeg",
+    "size_bytes": 93631,
+    "width": "1200px",
+    "height": "675px"
+  },
+  {
+    "filename": "graduation-03.jpg",
+    "category": "graduation",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/0dac7053b93a.jpg",
+    "size_bytes": 528911,
+    "width": "2048px",
+    "height": "1365px"
+  },
+  {
+    "filename": "graduation-04.jpg",
+    "category": "graduation",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/47e1496e060d.jpg",
+    "size_bytes": 177279,
+    "width": "1080px",
+    "height": "1350px"
+  },
+  {
+    "filename": "graduation-05.jpg",
+    "category": "graduation",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/6d6eab3a09a3.jpg",
+    "size_bytes": 198520,
+    "width": "1820px",
+    "height": "1024px"
+  },
+  {
+    "filename": "graduation-06.jpg",
+    "category": "graduation",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/7d336a8ca02c.jpg",
+    "size_bytes": 337880,
+    "width": "2048px",
+    "height": "1365px"
+  },
+  {
+    "filename": "skillslab-01.jpg",
+    "category": "skillslab",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/3cdaf15172dc.jpg",
+    "size_bytes": 287004,
+    "width": "3000px",
+    "height": "3000px"
+  },
+  {
+    "filename": "skillslab-02.jpg",
+    "category": "skillslab",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/d17d6ec4a568.jpg",
+    "size_bytes": 64357,
+    "width": "943px",
+    "height": "1000px"
+  },
+  {
+    "filename": "skillslab-03.jpg",
+    "category": "skillslab",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/5347a8352ce6.jpg",
+    "size_bytes": 62413,
+    "width": "1200px",
+    "height": "1200px"
+  },
+  {
+    "filename": "skillslab-04.jpg",
+    "category": "skillslab",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/f7d7716d7cb3.jpg",
+    "size_bytes": 70491,
+    "width": "1000px",
+    "height": "1000px"
+  },
+  {
+    "filename": "skillslab-05.jpg",
+    "category": "skillslab",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/4849e632cdd2.jpg",
+    "size_bytes": 89143,
+    "width": "1000px",
+    "height": "1000px"
+  },
+  {
+    "filename": "clinical-01.jpg",
+    "category": "clinical",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/aa8122251495.jpg",
+    "size_bytes": 319393,
+    "width": "1500px",
+    "height": "1131px"
+  },
+  {
+    "filename": "clinical-02.jpg",
+    "category": "clinical",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/780fa4b5edc5.jpg",
+    "size_bytes": 154974,
+    "width": "1536px",
+    "height": "1024px"
+  },
+  {
+    "filename": "clinical-03.png",
+    "category": "clinical",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/1609e239a29f.png",
+    "size_bytes": 2072548,
+    "width": "1920px",
+    "height": "1080px"
+  },
+  {
+    "filename": "clinical-04.jpg",
+    "category": "clinical",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/51867d373810.jpeg",
+    "size_bytes": 144953,
+    "width": "1812px",
+    "height": "1019px"
+  },
+  {
+    "filename": "clinical-05.jpg",
+    "category": "clinical",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/76ecfca9a4b8.jpg",
+    "size_bytes": 228420,
+    "width": "2000px",
+    "height": "1333px"
+  },
+  {
+    "filename": "windhoek-01.jpg",
+    "category": "windhoek",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/78df2574cdfa.jpg",
+    "size_bytes": 146677,
+    "width": "1300px",
+    "height": "956px"
+  },
+  {
+    "filename": "windhoek-02.jpg",
+    "category": "windhoek",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/d0ffb3f0fc7f.jpg",
+    "size_bytes": 216439,
+    "width": "1300px",
+    "height": "956px"
+  },
+  {
+    "filename": "windhoek-03.jpg",
+    "category": "windhoek",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/022d2f111b5e.jpg",
+    "size_bytes": 223272,
+    "width": "1920px",
+    "height": "1080px"
+  },
+  {
+    "filename": "windhoek-04.jpg",
+    "category": "windhoek",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/0abf28029c9a.jpg",
+    "size_bytes": 202434,
+    "width": "1300px",
+    "height": "931px"
+  },
+  {
+    "filename": "oath-01.jpg",
+    "category": "oath",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/91d0e06221f2.jpg",
+    "size_bytes": 124544,
+    "width": "1029px",
+    "height": "1390px"
+  },
+  {
+    "filename": "oath-02.jpg",
+    "category": "oath",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/81e734c5ef86.jpeg",
+    "size_bytes": 312684,
+    "width": "1600px",
+    "height": "1200px"
+  },
+  {
+    "filename": "oath-03.png",
+    "category": "oath",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/75d2f3c4056c.png",
+    "size_bytes": 1813808,
+    "width": "3051px",
+    "height": "1373px"
+  },
+  {
+    "filename": "oath-04.jpg",
+    "category": "oath",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/150027a9bdc7.jpg",
+    "size_bytes": 217609,
+    "width": "1279px",
+    "height": "720px"
+  },
+  {
+    "filename": "community-01.jpg",
+    "category": "community",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/d66e5e4f4d24.jpg",
+    "size_bytes": 504751,
+    "width": "1600px",
+    "height": "1200px"
+  },
+  {
+    "filename": "community-02.jpg",
+    "category": "community",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/1df01f83ce3a.jpg",
+    "size_bytes": 238125,
+    "width": "1513px",
+    "height": "1080px"
+  },
+  {
+    "filename": "community-03.jpg",
+    "category": "community",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/910061080aed.jpg",
+    "size_bytes": 683966,
+    "width": "2600px",
+    "height": "1733px"
+  },
+  {
+    "filename": "community-04.png",
+    "category": "community",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/3f8e5a10cc94.png",
+    "size_bytes": 2239532,
+    "width": "1620px",
+    "height": "1080px"
+  },
+  {
+    "filename": "placement-01.jpg",
+    "category": "placement",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/dbee910ce769.jpeg",
+    "size_bytes": 198860,
+    "width": "1600px",
+    "height": "993px"
+  },
+  {
+    "filename": "placement-02.jpg",
+    "category": "placement",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/d7f0cff7f1ac.jpg",
+    "size_bytes": 216236,
+    "width": "1200px",
+    "height": "900px"
+  },
+  {
+    "filename": "placement-03.jpg",
+    "category": "placement",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/3b5d83d91abe.jpg",
+    "size_bytes": 79042,
+    "width": "1500px",
+    "height": "844px"
+  },
+  {
+    "filename": "placement-04.jpg",
+    "category": "placement",
+    "source_url": "https://sfile.chatglm.cn/images-ppt/fea53788fcae.jpg",
+    "size_bytes": 467964,
+    "width": "2560px",
+    "height": "1362px"
+  }
+]

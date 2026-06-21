@@ -40,6 +40,36 @@ export default function AccreditationPage() {
               </p>
             </div>
           </div>
+
+          {/* Trust wall — all accreditation + partner logos */}
+          <div className="mt-16 pt-10 border-t border-pmt-purple-900/10" data-reveal>
+            <p className="font-mono text-xs uppercase tracking-widest text-pmt-gold mb-6 text-center">
+              Regulators, accreditors &amp; partners
+            </p>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 items-center">
+              {[
+                { src: "/images/crawled/logo-hpcna.png", alt: "HPCNA — Health Professions Council of Namibia", name: "HPCNA" },
+                { src: "/images/crawled/logo-nqa.png", alt: "NQA — Namibia Qualifications Authority", name: "NQA" },
+                { src: "/images/crawled/logo-icare-mou.png", alt: "I-Care Health Training Institute — articulation partner", name: "I-Care" },
+                { src: "/images/crawled/logo-nta.png", alt: "NTA — Namibia Training Authority", name: "NTA" },
+                { src: "/images/crawled/logo-nip.png", alt: "NIP — Namibia Institute of Pathology", name: "NIP" },
+                { src: "/images/crawled/logo-namibia-medical-care.png", alt: "Namibia Medical Care", name: "NMC" },
+              ].map((logo) => (
+                <div
+                  key={logo.name}
+                  className="bg-white border border-pmt-purple-900/10 rounded-2xl p-4 h-20 flex items-center justify-center card-physics"
+                >
+                  { }
+                  <img
+                    src={logo.src}
+                    alt={logo.alt}
+                    className="max-h-12 max-w-full object-contain"
+                    loading="lazy"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 

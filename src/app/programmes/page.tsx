@@ -118,27 +118,46 @@ export default function ProgrammesPage() {
                   {
                     title: "Theory",
                     body: "Classroom-based learning covering the foundational sciences — anatomy, physiology, microbiology — alongside nursing theory, midwifery, pharmacology, and professional ethics.",
+                    img: "/images/stock/classroom-05.jpg",
+                    alt: "Nursing students studying together with books and notebooks.",
                   },
                   {
                     title: "Skills lab",
                     body: "Practical skills are rehearsed in a controlled training environment before any clinical contact — from basic observations and wound care to assisted delivery.",
+                    img: "/images/stock/skillslab-01.jpg",
+                    alt: "Nursing skills lab with training manikin and medical equipment.",
                   },
                   {
                     title: "Clinical placement",
                     body: "Students rotate through clinical settings under supervision, building real-world competence in patient care, midwifery, and community health practice.",
+                    img: "/images/stock/placement-01.jpg",
+                    alt: "Nursing student in clinical placement in a hospital ward.",
                   },
                   {
                     title: "The oath",
                     body: "The night before graduation, students recite the formal nursing oath — the moment training becomes vocation. This is the institutional signature: every PMT graduate has taken it.",
+                    img: "/images/stock/oath-02.jpg",
+                    alt: "Nursing oath ceremony with candle lighting.",
                   },
                 ].map((s) => (
-                  <div key={s.title}>
-                    <h3 className="font-display text-xl text-pmt-purple-900 mb-2 tracking-tight">
-                      {s.title}
-                    </h3>
-                    <p className="text-sm text-pmt-ink-soft leading-relaxed">
-                      {s.body}
-                    </p>
+                  <div key={s.title} className="flex gap-5 items-start">
+                    <div className="img-zoom flex-shrink-0 w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden bg-pmt-purple-900">
+                      { }
+                      <img
+                        src={s.img}
+                        alt={s.alt}
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="font-display text-xl text-pmt-purple-900 mb-2 tracking-tight">
+                        {s.title}
+                      </h3>
+                      <p className="text-sm text-pmt-ink-soft leading-relaxed">
+                        {s.body}
+                      </p>
+                    </div>
                   </div>
                 ))}
               </div>
